@@ -138,8 +138,9 @@
       --cta-glow: rgba(216,31,38,.22);
       --cta-glow-strong: rgba(216,31,38,.38);
 
-      --gold:#d6b25e;
-      --gold2:#b58d34;
+      /* ✅ Brighter GOLD for WatchPack */
+      --gold:#f2d27a;
+      --gold2:#d9a93f;
 
       --blue:#2b6fff;
       --blue2:#1e4fd6;
@@ -148,11 +149,11 @@
     html { scroll-behavior: smooth; }
     body { color: var(--ink); background: #fff; }
 
-    /* ========================= HEADER ========================= */
+    /* ========================= HEADER (BIGGER + GRAND) ========================= */
     .top-bar{
       background: #000 !important;
       border-bottom: 1px solid rgba(255,255,255,.10);
-      padding: .65rem .75rem;
+      padding: 1.05rem 1.05rem;  /* bigger */
       position: sticky;
       top: 0;
       z-index: 200;
@@ -168,7 +169,7 @@
     .top-bar-left .menu{
       display:flex;
       align-items:center;
-      gap:.25rem;
+      gap:.35rem;
       flex-wrap: nowrap;
       width: 100%;
       min-width: 0;
@@ -181,20 +182,20 @@
       align-items:center;
       text-decoration:none;
       line-height:1;
-      margin-right: 1.3rem;
+      margin-right: 1.6rem;
       padding: 0;
     }
     .brand img{
-      height: 78px;   /* BIG + GRAND */
+      height: 104px;   /* ✅ bigger logo */
       width: auto;
       display:block;
       filter: none;
     }
 
     .top-bar .menu > li > a{
-      padding: 1.05rem .82rem;
-      font-size: 1.02rem;
-      font-weight: 900;
+      padding: 1.25rem .95rem;   /* bigger */
+      font-size: 1.08rem;        /* bigger */
+      font-weight: 950;
       letter-spacing: -0.2px;
       white-space: nowrap;
       color:#fff;
@@ -233,14 +234,15 @@
     }
 
     @media (max-width: 980px){
-      .top-bar .menu > li > a{ padding: .95rem .66rem; font-size: .98rem; }
-      .brand img{ height: 68px; }
+      .top-bar .menu > li > a{ padding: 1.05rem .72rem; font-size: 1.02rem; }
+      .brand img{ height: 92px; }
+      .top-bar{ padding: .95rem .75rem; }
     }
     @media (max-width: 740px){
       .top-bar .menu { flex-wrap: wrap; }
-      .brand{ width:100%; margin-right:0; margin-bottom: .35rem; justify-content:center; }
-      .top-bar{ padding: .7rem .55rem; }
-      .brand img{ height: 74px; }
+      .brand{ width:100%; margin-right:0; margin-bottom: .55rem; justify-content:center; }
+      .top-bar{ padding: .95rem .65rem; }
+      .brand img{ height: 98px; }
     }
 
     /* ========================= HERO ========================= */
@@ -251,8 +253,9 @@
       background:
         radial-gradient(900px 450px at 12% 18%, rgba(216,31,38,.18), transparent 60%),
         radial-gradient(900px 450px at 88% 25%, rgba(207,214,228,.14), transparent 60%),
-        linear-gradient(135deg, rgba(0,0,0,.78), rgba(17,17,26,.55)),
-        url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2400&q=80");
+        linear-gradient(135deg, rgba(0,0,0,.80), rgba(17,17,26,.55)),
+        /* ✅ New image that "pops" but stays readable */
+        url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2400&q=80");
       background-size: cover;
       background-position: center;
     }
@@ -289,7 +292,7 @@
       font-weight: 950;
       letter-spacing: -1.1px;
       margin-bottom:.65rem;
-      font-size: clamp(2.25rem, 4.2vw, 3.35rem);
+      font-size: clamp(2.35rem, 4.6vw, 3.55rem);
       line-height: 1.05;
     }
     .hero .lead{
@@ -330,7 +333,7 @@
     }
     .checkdot{
       width:10px;height:10px;border-radius: 999px;
-      background: var(--red);                 /* RED BULLETS (requested) */
+      background: var(--red);
       margin-top:.38rem;
       flex: 0 0 auto;
       box-shadow: 0 0 0 4px rgba(216,31,38,.18);
@@ -439,16 +442,12 @@
       pointer-events:none;
     }
     .plan-inner{ position:relative; display:flex; flex-direction:column; height:100%; }
-    .plan-head{ display:flex; align-items:center; gap:.7rem; margin-bottom:.3rem; }
-    .plan-icon{
-      width:44px; height:44px; border-radius: 14px;
-      display:inline-flex; align-items:center; justify-content:center;
-      border: 1px solid rgba(0,0,0,.08);
-      background: rgba(0,0,0,.02);
-      flex: 0 0 auto;
+    .plan-head{
+      display:flex;
+      align-items:center;
+      gap:.0rem; /* no icon anymore */
+      margin-bottom:.3rem;
     }
-    .plan-content{ flex: 1 1 auto; }
-    .plan-cta{ margin-top:auto; }
 
     /* How it works equal height */
     .how-grid .card{ min-height: 230px; }
@@ -495,7 +494,8 @@
     <div class="top-bar-right">
       <ul class="menu">
         <li><a href="tel:+12253044140">(225) 304-4140</a></li>
-        <li><a class="button small primary" href="#book" style="margin:0;">Schedule a Quick Call</a></li>
+        <!-- ✅ changed text -->
+        <li><a class="button small primary" href="#book" style="margin:0;">Book a Consult</a></li>
       </ul>
     </div>
   </div>
@@ -504,21 +504,27 @@
   <section id="top" class="hero">
     <div class="row">
       <div class="medium-7 columns text-center medium-text-left">
-        <div class="pill"><span class="dot"></span> 24/7 coverage • Business-ready reporting • Remote-first delivery</div>
+        <!-- ✅ pill text changed (same format, no "and") -->
+        <div class="pill"><span class="dot"></span> 24/7 coverage • Clear reporting • Managed security</div>
+
         <h1>Managed cybersecurity that keeps your business protected.</h1>
+
         <p class="lead">
           Cyber Hound Security helps businesses <b>prevent</b>, <b>detect</b>, and <b>respond</b> to cyber threats with
           continuous monitoring, endpoint security management, vulnerability scanning, and incident response support.
         </p>
 
         <div>
-          <a href="#book" class="button large primary">Schedule Your Security Call</a>
+          <!-- ✅ changed text -->
+          <a href="#book" class="button large primary">Book a Security Consultation</a>
           <a href="#contact" class="button large hollow light">Request a Call Back</a>
         </div>
 
         <div class="spacer"></div>
+
+        <!-- ✅ changed sentence -->
         <p style="margin:0; color: rgba(255,255,255,.88); font-size: 1rem; font-weight: 750;">
-          Serving Baton Rouge, Louisiana and clients nationwide (fully remote support available).
+          Based in Baton Rouge, trusted by teams across the U.S. (fully remote support available).
         </p>
       </div>
 
@@ -526,14 +532,19 @@
         <div class="hero-card">
           <b class="title">What we focus on</b>
           <div class="spacer"></div>
+
+          <!-- ✅ rewritten descriptions to sound more human -->
           <ul class="checks">
-            <li><span class="checkdot"></span><span class="small"><b>Visibility:</b> know what’s happening across devices + network</span></li>
-            <li><span class="checkdot"></span><span class="small"><b>Fast alerts:</b> prioritize real issues quickly</span></li>
-            <li><span class="checkdot"></span><span class="small"><b>Reduction:</b> scanning + hardening to lower exposure</span></li>
-            <li><span class="checkdot"></span><span class="small"><b>Guidance:</b> incident response support when it matters</span></li>
+            <li><span class="checkdot"></span><span class="small"><b>Visibility:</b> a clear view of what’s running, what’s exposed, and what needs attention</span></li>
+            <li><span class="checkdot"></span><span class="small"><b>Fast alerts:</b> we surface the important stuff quickly, so you’re not buried in noise</span></li>
+            <li><span class="checkdot"></span><span class="small"><b>Reduction:</b> steady scanning and hardening to shrink your attack surface over time</span></li>
+            <li><span class="checkdot"></span><span class="small"><b>Guidance:</b> practical help during incidents, including incident response support when it counts</span></li>
           </ul>
+
           <div class="spacer"></div>
-          <span class="small">Built for SMBs that want security to be clear, consistent, and managed.</span>
+
+          <!-- ✅ replaced AI-sounding line -->
+          <span class="small">Security support that adapts as your organization grows.</span>
         </div>
       </div>
     </div>
@@ -692,14 +703,7 @@
           <div class="plan-accent" aria-hidden="true"></div>
           <div class="plan-inner">
             <div class="plan-head">
-              <span class="plan-icon" aria-hidden="true">
-                <!-- gold shield + eye (simple inline svg) -->
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M12 2l7 4v6c0 5-3 9-7 10C8 21 5 17 5 12V6l7-4z" stroke="#b58d34" stroke-width="2" fill="rgba(214,178,94,.25)"/>
-                  <path d="M12 9c-3.5 0-6 3-6 3s2.5 3 6 3 6-3 6-3-2.5-3-6-3z" stroke="#b58d34" stroke-width="1.7"/>
-                  <circle cx="12" cy="12" r="1.6" fill="#b58d34"/>
-                </svg>
-              </span>
+              <!-- ✅ removed shield/eye icon -->
               <div>
                 <div class="tag gold">WatchPack</div>
               </div>
@@ -729,14 +733,7 @@
           <div class="plan-accent" aria-hidden="true"></div>
           <div class="plan-inner">
             <div class="plan-head">
-              <span class="plan-icon" aria-hidden="true">
-                <!-- blue shield + lock -->
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M12 2l7 4v6c0 5-3 9-7 10C8 21 5 17 5 12V6l7-4z" stroke="#1e4fd6" stroke-width="2" fill="rgba(43,111,255,.18)"/>
-                  <path d="M9 12v-1.5A3 3 0 0 1 12 7.5a3 3 0 0 1 3 3V12" stroke="#1e4fd6" stroke-width="1.7"/>
-                  <rect x="8.6" y="12" width="6.8" height="5.2" rx="1.2" stroke="#1e4fd6" stroke-width="1.7"/>
-                </svg>
-              </span>
+              <!-- ✅ removed shield/lock icon -->
               <div>
                 <div class="tag blue">BytePack</div>
               </div>
@@ -767,15 +764,7 @@
           <div class="plan-accent" aria-hidden="true"></div>
           <div class="plan-inner">
             <div class="plan-head">
-              <span class="plan-icon" aria-hidden="true">
-                <!-- red shield + wolf (minimal icon) -->
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M12 2l7 4v6c0 5-3 9-7 10C8 21 5 17 5 12V6l7-4z" stroke="#b3151b" stroke-width="2" fill="rgba(216,31,38,.18)"/>
-                  <path d="M8.2 15.8c1.4-1.2 2.3-3.6 2.8-5.6l1 1.1 1.2-2 1.1 2 1-1.1c.4 2 1.3 4.4 2.7 5.6-1 .5-2.4 1.2-4.8 1.2s-3.8-.7-4.8-1.2z"
-                        stroke="#b3151b" stroke-width="1.6" fill="rgba(255,255,255,.06)"/>
-                  <path d="M10.2 14.2l.7.3M13.1 14.2l.7.3" stroke="#b3151b" stroke-width="1.6" stroke-linecap="round"/>
-                </svg>
-              </span>
+              <!-- ✅ removed shield/wolf icon -->
               <div>
                 <div class="tag red">AlphaPack</div>
               </div>
