@@ -6,7 +6,7 @@
 
   <title>Managed Cybersecurity Services | Cyber Hound Security</title>
   <meta name="description" content="Cyber Hound Security provides managed cybersecurity protection for businesses—24/7 monitoring, threat detection, vulnerability scanning, endpoint security, incident response support, and strategic security planning." />
-  <meta name="theme-color" content="#0b0b0f" />
+  <meta name="theme-color" content="#000000" />
 
   <!-- ✅ SEO (safe + legit) -->
   <meta name="robots" content="index,follow,max-image-preview:large" />
@@ -40,13 +40,6 @@
   <meta name="twitter:description" content="Managed cybersecurity protection for businesses—monitoring, detection, response, and strategic security planning." />
   <meta name="twitter:image" content="https://cyberhound.github.io/assets/og-image.png" />
 
-  <!-- Favicons (optional — add these files when ready) -->
-  <!--
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
-  <link rel="manifest" href="assets/site.webmanifest" />
-  -->
   <link rel="icon" href="assets/favicon.ico" />
 
   <!-- ✅ Structured Data (Organization + Service) -->
@@ -61,8 +54,8 @@
         "url":"https://cyberhound.github.io/",
         "logo":"https://cyberhound.github.io/assets/logo.png",
         "image":"https://cyberhound.github.io/assets/og-image.png",
-        "email":"REPLACE_EMAIL",
-        "telephone":"REPLACE_PHONE",
+        "email":"randy@cyberhoundsec.com",
+        "telephone":"+1-225-304-4140",
         "address":{
           "@type":"PostalAddress",
           "addressLocality":"Baton Rouge",
@@ -122,7 +115,7 @@
   }
   </script>
 
-  <!-- Foundation CSS (kept since your previous site used it) -->
+  <!-- Foundation CSS -->
   <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css" />
 
   <!-- Calendly Embed Styles -->
@@ -130,22 +123,26 @@
 
   <style>
     :root{
-      /* Brand: Black + Red + Chrome (but not creepy) */
-      --black:#0b0b0f;
-      --black2:#11111a;
+      --black:#000000;
+      --black2:#0b0b0f;
       --paper:#f6f7fb;
       --ink:#0e1222;
 
-      --red:#d81f26;     /* primary red */
-      --red2:#b3151b;    /* deeper red */
-      --chrome:#cfd6e4;  /* chrome/silver */
-      --chrome2:#aeb7c8;
+      --red:#d81f26;
+      --red2:#b3151b;
 
+      --chrome:#cfd6e4;
       --stroke: rgba(0,0,0,.10);
       --shadow: 0 12px 28px rgba(0,0,0,.08);
 
-      --cta-glow: rgba(216,31,38,.20);
-      --cta-glow-strong: rgba(216,31,38,.32);
+      --cta-glow: rgba(216,31,38,.22);
+      --cta-glow-strong: rgba(216,31,38,.38);
+
+      --gold:#d6b25e;
+      --gold2:#b58d34;
+
+      --blue:#2b6fff;
+      --blue2:#1e4fd6;
     }
 
     html { scroll-behavior: smooth; }
@@ -153,18 +150,17 @@
 
     /* ========================= HEADER ========================= */
     .top-bar{
-      background: rgba(11,11,15,.92) !important;
-      border-bottom: 1px solid rgba(255,255,255,.08);
+      background: #000 !important;
+      border-bottom: 1px solid rgba(255,255,255,.10);
       padding: .65rem .75rem;
       position: sticky;
       top: 0;
       z-index: 200;
-      backdrop-filter: blur(10px);
     }
     .top-bar, .top-bar *{ background-color: transparent; }
     .top-bar-left, .top-bar-right, .top-bar ul, .top-bar .menu{ background: transparent !important; }
-    .top-bar a { color: rgba(255,255,255,.92); font-weight: 900; }
-    .top-bar a:hover { color: var(--chrome); }
+    .top-bar a { color: rgba(255,255,255,.95); font-weight: 900; }
+    .top-bar a:hover { color: #fff; }
     .top-bar-left, .top-bar-right{ display:flex; align-items:center; }
     .top-bar-left{ flex: 1 1 auto; min-width: 0; }
     .top-bar-right{ flex: 0 0 auto; }
@@ -183,40 +179,16 @@
     .brand{
       display:flex;
       align-items:center;
-      gap:.8rem;
       text-decoration:none;
       line-height:1;
       margin-right: 1.3rem;
       padding: 0;
     }
     .brand img{
-      height: 52px;
+      height: 78px;   /* BIG + GRAND */
       width: auto;
       display:block;
       filter: none;
-    }
-    .brand .brandtext{
-      display:flex;
-      flex-direction:column;
-      line-height:1.05;
-      min-width: 0;
-    }
-    .brand .brandtext b{
-      color:#fff;
-      font-weight: 950;
-      letter-spacing: -0.3px;
-      font-size: 1.05rem;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .brand .brandtext span{
-      color: rgba(207,214,228,.82);
-      font-weight: 750;
-      font-size: .86rem;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
 
     .top-bar .menu > li > a{
@@ -225,6 +197,7 @@
       font-weight: 900;
       letter-spacing: -0.2px;
       white-space: nowrap;
+      color:#fff;
     }
 
     /* ========================= BUTTONS ========================= */
@@ -232,24 +205,24 @@
       background: linear-gradient(180deg, #ff4c54 0%, var(--red) 42%, var(--red2) 100%);
       color: #fff !important;
       font-weight: 950;
-      border: 1px solid rgba(255,255,255,.10) !important;
+      border: 1px solid rgba(255,255,255,.12) !important;
       box-shadow:
         0 14px 34px rgba(0,0,0,.18),
         0 0 18px var(--cta-glow),
-        inset 0 1px 0 rgba(255,255,255,.18) !important;
+        inset 0 1px 0 rgba(255,255,255,.20) !important;
       transition: transform .15s ease, filter .15s ease, box-shadow .15s ease;
     }
     .button.primary:hover, .button.primary:focus{
       box-shadow:
         0 18px 48px rgba(0,0,0,.22),
-        0 0 26px var(--cta-glow-strong),
+        0 0 28px var(--cta-glow-strong),
         inset 0 1px 0 rgba(255,255,255,.22) !important;
       transform: translateY(-1px);
       outline: none;
     }
     .button.hollow.light{
-      border-color: rgba(207,214,228,.75);
-      color: rgba(255,255,255,.92);
+      border-color: rgba(255,255,255,.75);
+      color: rgba(255,255,255,.95);
       font-weight: 950;
       background: rgba(255,255,255,.04);
     }
@@ -261,12 +234,13 @@
 
     @media (max-width: 980px){
       .top-bar .menu > li > a{ padding: .95rem .66rem; font-size: .98rem; }
-      .brand img{ height: 46px; }
+      .brand img{ height: 68px; }
     }
     @media (max-width: 740px){
       .top-bar .menu { flex-wrap: wrap; }
       .brand{ width:100%; margin-right:0; margin-bottom: .35rem; justify-content:center; }
       .top-bar{ padding: .7rem .55rem; }
+      .brand img{ height: 74px; }
     }
 
     /* ========================= HERO ========================= */
@@ -277,8 +251,8 @@
       background:
         radial-gradient(900px 450px at 12% 18%, rgba(216,31,38,.18), transparent 60%),
         radial-gradient(900px 450px at 88% 25%, rgba(207,214,228,.14), transparent 60%),
-        linear-gradient(135deg, rgba(11,11,15,.78), rgba(17,17,26,.55)),
-        url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2400&q=80");
+        linear-gradient(135deg, rgba(0,0,0,.78), rgba(17,17,26,.55)),
+        url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2400&q=80");
       background-size: cover;
       background-position: center;
     }
@@ -297,18 +271,18 @@
       gap:.55rem;
       padding:.60rem 1.05rem;
       border-radius: 999px;
-      background: rgba(207,214,228,.10);
-      border: 1px solid rgba(207,214,228,.20);
-      color: rgba(255,255,255,.94);
-      font-weight: 900;
+      background: rgba(216,31,38,.18); /* RED PILL */
+      border: 1px solid rgba(216,31,38,.35);
+      color: rgba(255,255,255,.95);
+      font-weight: 950;
       font-size: .98rem;
       margin-bottom: 1rem;
       backdrop-filter: blur(10px);
     }
     .pill .dot{
       width:10px;height:10px;border-radius:999px;
-      background: var(--red);
-      box-shadow: 0 0 0 5px rgba(216,31,38,.18);
+      background: #fff;
+      box-shadow: 0 0 0 5px rgba(216,31,38,.20);
     }
 
     .hero h1{
@@ -356,10 +330,10 @@
     }
     .checkdot{
       width:10px;height:10px;border-radius: 999px;
-      background: var(--chrome);
+      background: var(--red);                 /* RED BULLETS (requested) */
       margin-top:.38rem;
       flex: 0 0 auto;
-      box-shadow: 0 0 0 4px rgba(207,214,228,.14);
+      box-shadow: 0 0 0 4px rgba(216,31,38,.18);
     }
 
     /* ========================= SECTIONS ========================= */
@@ -393,26 +367,28 @@
     }
     .card h4, .card h5 { font-weight: 950 !important; letter-spacing: -0.3px; }
 
+    /* ✅ Make service pills RED by default */
     .tag{
       display:inline-block;
       font-weight: 950;
       font-size: .82rem;
-      color: rgba(11,11,15,.90);
-      background: rgba(207,214,228,.35);
-      border: 1px solid rgba(0,0,0,.08);
+      color: rgba(255,255,255,.96);
+      background: rgba(216,31,38,.92);
+      border: 1px solid rgba(255,255,255,.10);
       padding: .28rem .6rem;
       border-radius: 999px;
       margin-bottom: .65rem;
-    }
-    .tag.red{
-      background: rgba(216,31,38,.12);
-      border: 1px solid rgba(216,31,38,.18);
-      color: rgba(216,31,38,.95);
+      box-shadow: 0 10px 20px rgba(0,0,0,.10), 0 0 18px rgba(216,31,38,.12);
     }
 
+    /* Package tags (color-coded) */
+    .tag.gold{ background: linear-gradient(180deg, var(--gold) 0%, var(--gold2) 100%); color:#111; border-color: rgba(0,0,0,.10); }
+    .tag.blue{ background: linear-gradient(180deg, var(--blue) 0%, var(--blue2) 100%); }
+    .tag.red{ background: linear-gradient(180deg, #ff4c54 0%, var(--red) 45%, var(--red2) 100%); }
+
     /* Services tiles */
-    .services-grid, .services-cards{ display:flex; flex-wrap: wrap; }
-    .services-grid .column, .services-cards .column{ display:flex; }
+    .services-grid{ display:flex; flex-wrap: wrap; }
+    .services-grid .column{ display:flex; }
     .tile{
       border-radius: 18px;
       overflow: hidden;
@@ -444,32 +420,38 @@
       margin: 0 0 .45rem;
     }
     .services-grid .tile{ height: 420px; }
-    .services-cards .card{
-      height: 260px;
-      width:100%;
-      display:flex;
-      flex-direction: column;
-    }
 
     /* Packages */
     .pricing-grid{ display:flex; flex-wrap: wrap; }
     .pricing-grid .column{ display:flex; }
     .pricing-grid .card{
       width:100%;
-      height: 560px;
+      height: 590px;          /* consistent height */
       display:flex;
       flex-direction: column;
       position: relative;
       overflow: hidden;
     }
-    .pricing-grid .card .button{ margin-top:auto; }
     .plan-accent{
       position:absolute; inset:-2px;
       background: radial-gradient(520px 240px at 30% 0%, rgba(216,31,38,.14), transparent 60%),
                   radial-gradient(520px 240px at 90% 40%, rgba(207,214,228,.18), transparent 60%);
       pointer-events:none;
     }
-    .plan-inner{ position:relative; }
+    .plan-inner{ position:relative; display:flex; flex-direction:column; height:100%; }
+    .plan-head{ display:flex; align-items:center; gap:.7rem; margin-bottom:.3rem; }
+    .plan-icon{
+      width:44px; height:44px; border-radius: 14px;
+      display:inline-flex; align-items:center; justify-content:center;
+      border: 1px solid rgba(0,0,0,.08);
+      background: rgba(0,0,0,.02);
+      flex: 0 0 auto;
+    }
+    .plan-content{ flex: 1 1 auto; }
+    .plan-cta{ margin-top:auto; }
+
+    /* How it works equal height */
+    .how-grid .card{ min-height: 230px; }
 
     /* Contact/Calendly wrap */
     .cal-wrap{
@@ -482,12 +464,12 @@
 
     /* Footer */
     .footer{
-      background: rgba(11,11,15,.98);
+      background: rgba(0,0,0,.98);
       color:#fff;
       padding: 2.2rem 0;
     }
     .footer a{ color:#fff; font-weight:800; }
-    .footer a:hover{ color: var(--chrome); }
+    .footer a:hover{ color: rgba(255,255,255,.85); }
   </style>
 </head>
 
@@ -498,12 +480,7 @@
       <ul class="menu">
         <li class="menu-text">
           <a href="#top" class="brand" aria-label="Cyber Hound Security Home">
-            <!-- ✅ Replace this file: /assets/logo.png -->
             <img src="./assets/logo.png" alt="Cyber Hound Security logo">
-            <div class="brandtext">
-              <b>Cyber Hound Security</b>
-              <span>Managed monitoring • detection • response</span>
-            </div>
           </a>
         </li>
         <li><a href="#services">Services</a></li>
@@ -517,9 +494,8 @@
 
     <div class="top-bar-right">
       <ul class="menu">
-        <!-- ✅ Replace the phone number -->
-        <li><a href="tel:REPLACE_PHONE">REPLACE_DISPLAY_PHONE</a></li>
-        <li><a class="button small primary" href="#book" style="margin:0;">Book a Consult</a></li>
+        <li><a href="tel:+12253044140">(225) 304-4140</a></li>
+        <li><a class="button small primary" href="#book" style="margin:0;">Schedule a Quick Call</a></li>
       </ul>
     </div>
   </div>
@@ -536,13 +512,13 @@
         </p>
 
         <div>
-          <a href="#book" class="button large primary">Book a Security Consultation</a>
+          <a href="#book" class="button large primary">Schedule Your Security Call</a>
           <a href="#contact" class="button large hollow light">Request a Call Back</a>
         </div>
 
         <div class="spacer"></div>
         <p style="margin:0; color: rgba(255,255,255,.88); font-size: 1rem; font-weight: 750;">
-          Serving :contentReference[oaicite:0]{index=0} and clients across the U.S. (remote support available).
+          Serving Baton Rouge, Louisiana and clients nationwide (fully remote support available).
         </p>
       </div>
 
@@ -557,18 +533,18 @@
             <li><span class="checkdot"></span><span class="small"><b>Guidance:</b> incident response support when it matters</span></li>
           </ul>
           <div class="spacer"></div>
-          <span class="small">Built for SMBs and teams that need security to be clear, consistent, and managed.</span>
+          <span class="small">Built for SMBs that want security to be clear, consistent, and managed.</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========================= SERVICES ========================= -->
+  <!-- ========================= SERVICES (TOP 6 ONLY) ========================= -->
   <section id="services" class="section">
     <div class="row column text-center">
       <h2 class="section-title">Managed Cybersecurity Services</h2>
       <p class="muted centered">
-        Security that’s practical for businesses: ongoing monitoring, rapid detection, clear reporting, and a plan that improves over time.
+        Simple, business-friendly coverage: visibility, prevention, detection, and response—delivered remotely with clear reporting.
       </p>
     </div>
 
@@ -577,9 +553,9 @@
         <div class="tile">
           <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=70" alt="Security monitoring dashboard">
           <div class="pad">
-            <div class="tag red">24/7</div>
+            <div class="tag">24/7 Monitoring</div>
             <div class="service-title">Continuous monitoring</div>
-            <p class="muted">Ongoing visibility into networks and devices to spot risks and suspicious activity early.</p>
+            <p class="muted">Ongoing visibility into networks and devices to spot risk early and reduce blind spots.</p>
           </div>
         </div>
       </div>
@@ -588,9 +564,9 @@
         <div class="tile">
           <img src="https://images.unsplash.com/photo-1563986768711-b3bde3dc821e?auto=format&fit=crop&w=1600&q=70" alt="Threat detection alerts">
           <div class="pad">
-            <div class="tag">Detection</div>
-            <div class="service-title">Threat detection & alerts</div>
-            <p class="muted">Actionable alerts so issues are identified quickly and handled with the right priority.</p>
+            <div class="tag">Threat Alerts</div>
+            <div class="service-title">Threat detection & alerting</div>
+            <p class="muted">Actionable alerts so the right issues get attention fast—without noise and confusion.</p>
           </div>
         </div>
       </div>
@@ -599,84 +575,43 @@
         <div class="tile">
           <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=1600&q=70" alt="Vulnerability scanning and patching">
           <div class="pad">
-            <div class="tag">Hygiene</div>
+            <div class="tag">Vuln Scans</div>
             <div class="service-title">Vulnerability scanning</div>
-            <p class="muted">Regular scanning to find weaknesses and guide remediation to reduce exposure.</p>
+            <p class="muted">Regular scanning to find weaknesses and guide fixes that reduce exposure over time.</p>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="row small-up-1 medium-up-3 services-cards" style="margin-top:1rem;">
-      <div class="column">
-        <div class="card">
-          <div class="tag red">Response</div>
-          <h4><strong>Incident response support</strong></h4>
-          <p class="muted">Guidance during cyber events—containment steps, recovery planning, and next actions.</p>
-        </div>
-      </div>
 
       <div class="column">
-        <div class="card">
-          <div class="tag">Endpoints</div>
-          <h4><strong>Endpoint security management</strong></h4>
-          <p class="muted">Protection for company devices with managed security controls and continuous improvements.</p>
+        <div class="tile">
+          <img src="https://images.unsplash.com/photo-1556155092-8707de31f9c4?auto=format&fit=crop&w=1600&q=70" alt="Endpoint security protection">
+          <div class="pad">
+            <div class="tag">Endpoints</div>
+            <div class="service-title">Endpoint security management</div>
+            <p class="muted">Stronger device protection with managed security controls and continuous improvements.</p>
+          </div>
         </div>
       </div>
 
       <div class="column">
-        <div class="card">
-          <div class="tag">Reporting</div>
-          <h4><strong>Security reporting & insights</strong></h4>
-          <p class="muted">Clear reporting so leaders understand risk level, trends, and what’s improving.</p>
+        <div class="tile">
+          <img src="https://images.unsplash.com/photo-1553484771-371a605b060b?auto=format&fit=crop&w=1600&q=70" alt="Incident response planning">
+          <div class="pad">
+            <div class="tag">Response</div>
+            <div class="service-title">Incident response support</div>
+            <p class="muted">Guidance during cyber events—containment steps, recovery planning, and next actions.</p>
+          </div>
         </div>
       </div>
 
       <div class="column">
-        <div class="card">
-          <div class="tag">People</div>
-          <h4><strong>Employee cybersecurity guidance</strong></h4>
-          <p class="muted">Reduce human error and phishing risk with practical guidance and safer habits.</p>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <div class="tag">Strategy</div>
-          <h4><strong>Strategic security planning</strong></h4>
-          <p class="muted">Roadmaps, reviews, and prioritized improvements aligned to your business goals.</p>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <div class="tag red">Advanced</div>
-          <h4><strong>Threat hunting & testing</strong></h4>
-          <p class="muted">For higher-risk teams: deeper investigation and proactive testing to find hidden threats.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row small-up-1 medium-up-3 services-cards" style="margin-top:1rem;">
-      <div class="column">
-        <div class="card">
-          <div class="tag">Policies</div>
-          <h4><strong>Security policies & compliance support</strong></h4>
-          <p class="muted">Customized policies plus evidence-friendly documentation to support compliance needs.</p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <div class="tag">Resilience</div>
-          <h4><strong>Backup & disaster recovery planning</strong></h4>
-          <p class="muted">Prevent data loss and improve recovery readiness if systems go down or ransomware hits.</p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <div class="tag">Leadership</div>
-          <h4><strong>Executive briefings</strong></h4>
-          <p class="muted">Leader-friendly consultations and briefings for decisions, budgets, and risk acceptance.</p>
+        <div class="tile">
+          <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&w=1600&q=70" alt="Security reporting and insights">
+          <div class="pad">
+            <div class="tag">Reporting</div>
+            <div class="service-title">Security reporting & insights</div>
+            <p class="muted">Leader-friendly reporting so you understand risk, trends, and what’s improving.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -685,8 +620,8 @@
     <div class="row" style="margin-top:2.2rem;">
       <div class="medium-8 medium-centered columns">
         <div class="card">
-          <h4 style="margin-bottom:.25rem;"><strong>Prefer a call/email back?</strong></h4>
-          <p class="muted" style="margin-top:0;">Send a quick request (goes to your inbox via Formspree).</p>
+          <h4 style="margin-bottom:.25rem;"><strong>Want us to reach out?</strong></h4>
+          <p class="muted" style="margin-top:0;">Send a quick request and we’ll respond ASAP.</p>
 
           <!-- ✅ Replace FORM_ACTION below with your Formspree endpoint -->
           <form action="FORM_ACTION" method="POST">
@@ -719,14 +654,12 @@
                 <option>Vulnerability Scanning</option>
                 <option>Incident Response Support</option>
                 <option>Security Reporting & Insights</option>
-                <option>Policies / Compliance Support</option>
-                <option>Backup / Disaster Recovery Planning</option>
                 <option>Not sure (recommend a package)</option>
               </select>
             </label>
 
             <label>Brief details (optional)
-              <textarea name="details" rows="4" placeholder="Example: 25 devices, compliance requirement, phishing issues, ransomware concern..."></textarea>
+              <textarea name="details" rows="4" placeholder="Example: 25 devices, phishing issues, ransomware concern, vendor questionnaire..."></textarea>
             </label>
 
             <button type="submit" class="button primary expanded">Send Request</button>
@@ -748,63 +681,121 @@
       <h2 class="section-title">Packages</h2>
       <p class="muted centered">
         Three managed options—built to match your risk level and the maturity of your environment.
-        Pricing is customized after a quick consult.
+        Pricing is customized after a quick call.
       </p>
     </div>
 
     <div class="row small-up-1 medium-up-3 pricing-grid">
+      <!-- WATCHPACK (GOLD) -->
       <div class="column">
         <div class="card">
           <div class="plan-accent" aria-hidden="true"></div>
           <div class="plan-inner">
-            <div class="tag red">WatchPack</div>
-            <h4><strong>Foundational monitoring & visibility</strong></h4>
-            <ul class="muted" style="margin-left:1.1rem;">
-              <li>Continuous monitoring & alerting</li>
-              <li>Baseline reporting & risk insights</li>
-              <li>Security recommendations (prioritized)</li>
-              <li>Light guidance for phishing & user risk</li>
-            </ul>
-            <p class="muted tight"><strong>Best for:</strong> small teams needing consistent security coverage.</p>
-            <a href="#book" class="button primary expanded">Book & Get a Plan</a>
+            <div class="plan-head">
+              <span class="plan-icon" aria-hidden="true">
+                <!-- gold shield + eye (simple inline svg) -->
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 2l7 4v6c0 5-3 9-7 10C8 21 5 17 5 12V6l7-4z" stroke="#b58d34" stroke-width="2" fill="rgba(214,178,94,.25)"/>
+                  <path d="M12 9c-3.5 0-6 3-6 3s2.5 3 6 3 6-3 6-3-2.5-3-6-3z" stroke="#b58d34" stroke-width="1.7"/>
+                  <circle cx="12" cy="12" r="1.6" fill="#b58d34"/>
+                </svg>
+              </span>
+              <div>
+                <div class="tag gold">WatchPack</div>
+              </div>
+            </div>
+
+            <div class="plan-content">
+              <h4><strong>Foundational monitoring & visibility</strong></h4>
+              <ul class="muted" style="margin-left:1.1rem;">
+                <li>Continuous monitoring & alerting</li>
+                <li>Baseline reporting & risk insights</li>
+                <li>Prioritized security recommendations</li>
+                <li>Light guidance for phishing & user risk</li>
+              </ul>
+              <p class="muted tight"><strong>Best for:</strong> small teams needing consistent security coverage.</p>
+            </div>
+
+            <div class="plan-cta">
+              <a href="#book" class="button primary expanded">Schedule a Quick Call</a>
+            </div>
           </div>
         </div>
       </div>
 
+      <!-- BYTEPACK (BLUE) -->
       <div class="column">
         <div class="card">
           <div class="plan-accent" aria-hidden="true"></div>
           <div class="plan-inner">
-            <div class="tag">BytePack</div>
-            <h4><strong>Managed security + ongoing hardening</strong></h4>
-            <ul class="muted" style="margin-left:1.1rem;">
-              <li>Everything in WatchPack</li>
-              <li>Regular vulnerability scanning</li>
-              <li>Endpoint security management</li>
-              <li>Incident response support (as needed)</li>
-              <li>Monthly review + action plan</li>
-            </ul>
-            <p class="muted tight"><strong>Best for:</strong> growing businesses that need prevention + response readiness.</p>
-            <a href="#book" class="button primary expanded">Book & Get a Plan</a>
+            <div class="plan-head">
+              <span class="plan-icon" aria-hidden="true">
+                <!-- blue shield + lock -->
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 2l7 4v6c0 5-3 9-7 10C8 21 5 17 5 12V6l7-4z" stroke="#1e4fd6" stroke-width="2" fill="rgba(43,111,255,.18)"/>
+                  <path d="M9 12v-1.5A3 3 0 0 1 12 7.5a3 3 0 0 1 3 3V12" stroke="#1e4fd6" stroke-width="1.7"/>
+                  <rect x="8.6" y="12" width="6.8" height="5.2" rx="1.2" stroke="#1e4fd6" stroke-width="1.7"/>
+                </svg>
+              </span>
+              <div>
+                <div class="tag blue">BytePack</div>
+              </div>
+            </div>
+
+            <div class="plan-content">
+              <h4><strong>Managed security + ongoing hardening</strong></h4>
+              <ul class="muted" style="margin-left:1.1rem;">
+                <li>Everything in WatchPack</li>
+                <li>Regular vulnerability scanning</li>
+                <li>Endpoint security management</li>
+                <li>Incident response support (as needed)</li>
+                <li>Monthly review + action plan</li>
+              </ul>
+              <p class="muted tight"><strong>Best for:</strong> growing businesses that need prevention + response readiness.</p>
+            </div>
+
+            <div class="plan-cta">
+              <a href="#book" class="button primary expanded">Schedule a Quick Call</a>
+            </div>
           </div>
         </div>
       </div>
 
+      <!-- ALPHAPACK (RED) -->
       <div class="column">
         <div class="card">
           <div class="plan-accent" aria-hidden="true"></div>
           <div class="plan-inner">
-            <div class="tag red">AlphaPack</div>
-            <h4><strong>High assurance + advanced security work</strong></h4>
-            <ul class="muted" style="margin-left:1.1rem;">
-              <li>Everything in BytePack</li>
-              <li>Advanced threat hunting & testing</li>
-              <li>Customized policies & compliance support</li>
-              <li>Backup/DR planning + tabletop readiness</li>
-              <li>Executive-level briefings & consultations</li>
-            </ul>
-            <p class="muted tight"><strong>Best for:</strong> higher-risk environments or organizations with compliance pressure.</p>
-            <a href="#contact" class="button primary expanded">Talk to an Expert</a>
+            <div class="plan-head">
+              <span class="plan-icon" aria-hidden="true">
+                <!-- red shield + wolf (minimal icon) -->
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 2l7 4v6c0 5-3 9-7 10C8 21 5 17 5 12V6l7-4z" stroke="#b3151b" stroke-width="2" fill="rgba(216,31,38,.18)"/>
+                  <path d="M8.2 15.8c1.4-1.2 2.3-3.6 2.8-5.6l1 1.1 1.2-2 1.1 2 1-1.1c.4 2 1.3 4.4 2.7 5.6-1 .5-2.4 1.2-4.8 1.2s-3.8-.7-4.8-1.2z"
+                        stroke="#b3151b" stroke-width="1.6" fill="rgba(255,255,255,.06)"/>
+                  <path d="M10.2 14.2l.7.3M13.1 14.2l.7.3" stroke="#b3151b" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+              </span>
+              <div>
+                <div class="tag red">AlphaPack</div>
+              </div>
+            </div>
+
+            <div class="plan-content">
+              <h4><strong>High assurance + advanced security work</strong></h4>
+              <ul class="muted" style="margin-left:1.1rem;">
+                <li>Everything in BytePack</li>
+                <li>Advanced threat hunting & testing</li>
+                <li>Policies & compliance documentation</li>
+                <li>Backup/DR planning + readiness exercises</li>
+                <li>Executive-level briefings</li>
+              </ul>
+              <p class="muted tight"><strong>Best for:</strong> higher-risk environments or teams with compliance pressure.</p>
+            </div>
+
+            <div class="plan-cta">
+              <a href="#book" class="button primary expanded">Schedule a Quick Call</a>
+            </div>
           </div>
         </div>
       </div>
@@ -815,14 +806,14 @@
         <div class="card">
           <h4 style="margin-bottom:.25rem;"><strong>Not sure which package fits?</strong></h4>
           <p class="muted" style="margin-top:0;">
-            Book a consultation. We’ll review your environment, goals, and risk—then recommend the right level of coverage.
+            Schedule a quick call. We’ll review your environment, goals, and risk—then recommend the right level of coverage.
           </p>
           <div class="row">
             <div class="medium-6 columns">
-              <a href="#book" class="button primary expanded">Book a Consult</a>
+              <a href="#book" class="button primary expanded">Schedule a Quick Call</a>
             </div>
             <div class="medium-6 columns">
-              <a href="tel:REPLACE_PHONE" class="button hollow expanded">Call Now</a>
+              <a href="tel:+12253044140" class="button hollow expanded">Call (225) 304-4140</a>
             </div>
           </div>
         </div>
@@ -837,26 +828,26 @@
       <p class="muted centered">A simple onboarding process that starts fast—and improves your security month by month.</p>
     </div>
 
-    <div class="row small-up-1 medium-up-3">
+    <div class="row small-up-1 medium-up-3 how-grid">
       <div class="column">
         <div class="card">
           <div class="tag">Step 1</div>
           <h4><strong>Assess & scope</strong></h4>
-          <p class="muted">We identify devices, priorities, risk areas, and any compliance needs so we can build the right plan.</p>
+          <p class="muted">We identify devices, priorities, risk areas, and any requirements so we can build the right plan.</p>
         </div>
       </div>
       <div class="column">
         <div class="card">
           <div class="tag">Step 2</div>
           <h4><strong>Deploy & monitor</strong></h4>
-          <p class="muted">We set up monitoring and endpoint coverage, configure alerting, and establish a baseline.</p>
+          <p class="muted">We deploy monitoring and endpoint coverage, configure alerting, and establish a strong baseline.</p>
         </div>
       </div>
       <div class="column">
         <div class="card">
           <div class="tag">Step 3</div>
           <h4><strong>Improve & report</strong></h4>
-          <p class="muted">We provide reporting, remediation priorities, and ongoing improvements—plus support if incidents occur.</p>
+          <p class="muted">You get clear reporting, prioritized fixes, and ongoing improvements—plus support during incidents.</p>
         </div>
       </div>
     </div>
@@ -867,18 +858,50 @@
     <div class="row column text-center">
       <h2 class="section-title">Compliance & Policy Support</h2>
       <p class="muted centered">
-        We help you organize documentation, policies, and reporting to support common business requirements
-        (insurance questionnaires, vendor security reviews, internal governance, and more).
+        We help you organize documentation, policies, and reporting to support real-world business requirements—
+        insurance questionnaires, vendor security reviews, and internal governance.
       </p>
     </div>
 
-    <div class="row">
+    <div class="row small-up-1 medium-up-3" style="margin-top:1.1rem;">
+      <div class="column">
+        <div class="card">
+          <div class="tag">Documentation</div>
+          <h4><strong>Evidence-ready reporting</strong></h4>
+          <p class="muted">Get reports you can use for leadership updates, vendor questionnaires, and risk tracking.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="tag">Policies</div>
+          <h4><strong>Security policies that make sense</strong></h4>
+          <p class="muted">Practical policies your team can actually follow—aligned to your business and tools.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="tag">Readiness</div>
+          <h4><strong>Response planning & tabletop support</strong></h4>
+          <p class="muted">We help you prepare for incidents with clear steps, roles, and realistic exercises.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top:1.4rem;">
       <div class="medium-10 medium-centered columns">
         <div class="card">
           <h4 style="margin-bottom:.25rem;"><strong>Make security understandable for leaders.</strong></h4>
           <p class="muted" style="margin-top:0;">
             You get executive-friendly insights, a clear action plan, and a security posture you can explain to partners and stakeholders.
           </p>
+          <div class="row">
+            <div class="medium-6 columns">
+              <a href="#book" class="button primary expanded">Schedule a Quick Call</a>
+            </div>
+            <div class="medium-6 columns">
+              <a href="mailto:randy@cyberhoundsec.com" class="button hollow expanded">Email randy@cyberhoundsec.com</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -887,22 +910,23 @@
   <!-- ========================= BOOK (CALENDLY) ========================= -->
   <section id="book" class="section">
     <div class="row column text-center">
-      <h2 class="section-title">Book a Security Consultation</h2>
+      <h2 class="section-title">Schedule Your Security Call</h2>
       <p class="muted centered">
-        Choose a time that works for you. If you prefer, call or email and we’ll schedule it together.
+        Choose a time that works for you. Prefer phone or email? We’ll schedule it together.
       </p>
 
       <div style="margin-top:.75rem;">
-        <a href="tel:REPLACE_PHONE" class="button hollow">Call REPLACE_DISPLAY_PHONE</a>
-        <a href="mailto:REPLACE_EMAIL" class="button primary">Email Us</a>
+        <a href="tel:+12253044140" class="button hollow">Call (225) 304-4140</a>
+        <a href="mailto:randy@cyberhoundsec.com" class="button primary">Email Us</a>
       </div>
     </div>
 
     <div class="row" style="margin-top:1.6rem;">
       <div class="medium-10 medium-centered columns">
         <div class="cal-wrap">
-          <!-- ✅ Replace CALENDLY_URL below with your Calendly link -->
-          <div class="calendly-inline-widget" data-url="CALENDLY_URL" style="min-width:320px;height:820px;"></div>
+          <div class="calendly-inline-widget"
+               data-url="https://calendly.com/randy-cyberhoundsec-gbds/30min"
+               style="min-width:320px;height:820px;"></div>
         </div>
       </div>
     </div>
@@ -912,7 +936,7 @@
   <section id="contact" class="section alt">
     <div class="row column text-center">
       <h2 class="section-title">Contact</h2>
-      <p class="muted centered">Call, book online, or send a message. We’ll recommend the cleanest next step.</p>
+      <p class="muted centered">Call, schedule online, or send a message—then we’ll recommend the cleanest next step.</p>
     </div>
 
     <div class="row">
@@ -920,17 +944,17 @@
         <div class="card">
           <h4><strong>Get in touch</strong></h4>
           <p class="muted">
-            <strong>Phone:</strong> <a href="tel:REPLACE_PHONE">REPLACE_DISPLAY_PHONE</a><br />
-            <strong>Email:</strong> <a href="mailto:REPLACE_EMAIL">REPLACE_EMAIL</a><br />
+            <strong>Phone:</strong> <a href="tel:+12253044140">(225) 304-4140</a><br />
+            <strong>Email:</strong> <a href="mailto:randy@cyberhoundsec.com">randy@cyberhoundsec.com</a><br />
             <strong>HQ:</strong> Baton Rouge, Louisiana (remote services available nationwide)
           </p>
 
           <div class="row">
             <div class="medium-6 columns">
-              <a href="#book" class="button primary expanded">Book Now</a>
+              <a href="#book" class="button primary expanded">Schedule a Quick Call</a>
             </div>
             <div class="medium-6 columns">
-              <a href="tel:REPLACE_PHONE" class="button hollow expanded">Call Now</a>
+              <a href="tel:+12253044140" class="button hollow expanded">Call Now</a>
             </div>
           </div>
         </div>
@@ -974,13 +998,13 @@
       <div class="medium-7 columns">
         <h4 style="margin:0 0 .35rem; font-weight:950;">Cyber Hound Security</h4>
         <p style="margin:0; color: rgba(255,255,255,.82);">
-          Managed cybersecurity monitoring • detection • response • strategy
+          Managed cybersecurity services • Remote-first • Nationwide coverage
         </p>
 
         <div style="margin-top:.9rem;">
-          <a href="tel:REPLACE_PHONE">REPLACE_DISPLAY_PHONE</a>
+          <a href="tel:+12253044140">(225) 304-4140</a>
           <span style="opacity:.5;"> • </span>
-          <a href="mailto:REPLACE_EMAIL">REPLACE_EMAIL</a>
+          <a href="mailto:randy@cyberhoundsec.com">randy@cyberhoundsec.com</a>
           <span style="opacity:.5;"> • </span>
           <a href="#services">Services</a>
           <span style="opacity:.5;"> • </span>
@@ -1002,7 +1026,10 @@
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.js"></script>
-  <script>$(document).foundation(); document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script>
+    $(document).foundation();
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
   <!-- Calendly -->
   <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
