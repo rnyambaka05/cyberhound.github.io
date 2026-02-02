@@ -164,11 +164,11 @@
     .top-bar{
       background: #000 !important;
       border-bottom: 1px solid rgba(255,255,255,.10);
-      padding: 1.25rem 1.15rem; /* ✅ slightly taller to fit bigger logo */
+      padding: 1.55rem 1.15rem; /* ✅ a bit taller to support bigger logo */
       position: sticky;
       top: 0;
       z-index: 200;
-      min-height: 118px; /* ✅ allow logo to be dominant */
+      min-height: 148px; /* ✅ larger header so logo can feel grand */
     }
     .top-bar, .top-bar *{ background-color: transparent; }
     .top-bar-left, .top-bar-right, .top-bar ul, .top-bar .menu{ background: transparent !important; }
@@ -194,13 +194,12 @@
       align-items:center;
       text-decoration:none;
       line-height:1;
-      margin-right: 1.85rem; /* ✅ a touch more breathing room */
+      margin-right: 2.05rem; /* ✅ slight breathing room as logo grows */
       padding: 0;
       flex: 0 0 auto;
     }
     .brand img{
-      /* ✅ remove any implied constraints and let the logo be dominant */
-      height: 132px;          /* ✅ bigger + more grand */
+      height: 170px;          /* ✅ significantly bigger */
       width: auto;
       max-height: none;       /* ✅ ensure no max-height caps it */
       max-width: none;        /* ✅ ensure no max-width caps it */
@@ -251,14 +250,14 @@
 
     @media (max-width: 980px){
       .top-bar .menu > li > a{ padding: 1.05rem .72rem; font-size: 1.02rem; }
-      .brand img{ height: 118px; } /* ✅ still large on tablet */
-      .top-bar{ padding: 1.05rem .85rem; min-height: 112px; }
+      .brand img{ height: 152px; } /* ✅ still big on tablet */
+      .top-bar{ padding: 1.25rem .85rem; min-height: 140px; }
     }
     @media (max-width: 740px){
       .top-bar .menu { flex-wrap: wrap; }
       .brand{ width:100%; margin-right:0; margin-bottom: .55rem; justify-content:center; }
-      .top-bar{ padding: .95rem .65rem; min-height: unset; }
-      .brand img{ height: 112px; } /* ✅ big but mobile-safe */
+      .top-bar{ padding: 1.05rem .65rem; min-height: unset; }
+      .brand img{ height: 140px; } /* ✅ big but mobile-safe */
     }
 
     /* ========================= HERO ========================= */
@@ -286,7 +285,7 @@
       content:"";
       position:absolute;
       inset:0;
-      background: linear-gradient(180deg, rgba(0,0,0,.26) 0%, rgba(0,0,0,.18) 55%, rgba(0,0,0,.22) 100%);
+      background: linear-gradient(180deg, rgba(0,0,0,.30) 0%, rgba(0,0,0,.18) 55%, rgba(0,0,0,.26) 100%);
       pointer-events:none;
     }
     .hero > .row{ position:relative; z-index:1; }
@@ -317,16 +316,15 @@
       margin-bottom:.65rem;
       font-size: clamp(2.35rem, 4.6vw, 3.55rem);
       line-height: 1.05;
-      /* ✅ readability only */
       text-shadow: 0 2px 16px rgba(0,0,0,.35);
     }
     .hero .lead{
-      color: rgba(255,255,255,.97); /* ✅ brighter for readability */
+      color: rgba(255,255,255,.99); /* ✅ slightly brighter */
       max-width: 70ch;
       margin: .9rem auto 1.55rem;
       font-size: 1.18rem;
-      font-weight: 650;            /* ✅ slightly stronger */
-      text-shadow: 0 2px 14px rgba(0,0,0,.35); /* ✅ contrast */
+      font-weight: 650;
+      text-shadow: 0 2px 18px rgba(0,0,0,.42); /* ✅ extra readability */
     }
     .hero-card{
       background: rgba(255,255,255,.08);
@@ -338,7 +336,7 @@
       box-shadow: 0 18px 55px rgba(0,0,0,.28);
     }
     .hero-card b { color:#fff; font-weight: 950; }
-    .hero-card .small { color: rgba(255,255,255,.90); font-weight: 650; }
+    .hero-card .small { color: rgba(255,255,255,.92); font-weight: 650; }
     .hero-card .title{
       display:inline-block;
       padding-bottom: .25rem;
@@ -493,6 +491,34 @@
     /* How it works equal height */
     .how-grid .card{ min-height: 230px; }
 
+    /* ✅ Visual block after How It Works */
+    .visual-grid{ display:flex; flex-wrap: wrap; }
+    .visual-grid .column{ display:flex; }
+    .visual-tile{
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,.08);
+      box-shadow: var(--shadow);
+      background:#fff;
+      width:100%;
+      display:flex;
+      flex-direction: column;
+    }
+    .visual-tile img{
+      width:100%;
+      height: 220px;
+      object-fit: cover;
+      display:block;
+    }
+    .visual-tile .pad{
+      padding: 1rem 1.15rem 1.15rem;
+    }
+    .visual-title{
+      font-weight: 950;
+      letter-spacing: -0.3px;
+      margin: 0 0 .25rem;
+    }
+
     /* Contact/Calendly wrap */
     .cal-wrap{
       border: 1px solid rgba(0,0,0,.08);
@@ -585,8 +611,7 @@
           <h1>Managed cybersecurity that keeps your business protected.</h1>
 
           <p class="lead">
-            Cyber Hound Security helps businesses <b>prevent</b>, <b>detect</b>, and <b>respond</b> to cyber threats with
-            continuous monitoring, endpoint security management, vulnerability scanning, and incident response support.
+            Cyber Hound Security helps businesses <b>prevent</b>, <b>detect</b>, and <b>respond</b> to cyber threats with 24/7 monitoring, endpoint security management, vulnerability scanning, and incident response support.
           </p>
 
           <div>
@@ -608,9 +633,9 @@
 
             <!-- ✅ exactly 3 bullets: Visibility, Speed, Continuity -->
             <ul class="checks">
-              <li><span class="checkdot"></span><span class="small"><b>Visibility:</b> know what’s running, what’s exposed, and what needs attention.</span></li>
-              <li><span class="checkdot"></span><span class="small"><b>Speed:</b> fast, actionable alerts so you can respond without the noise.</span></li>
-              <li><span class="checkdot"></span><span class="small"><b>Continuity:</b> steady monitoring and improvements that keep protection consistent.</span></li>
+              <li><span class="checkdot"></span><span class="small"><b>Visibility:</b> Know what’s running, exposed, and needs attention</span></li>
+              <li><span class="checkdot"></span><span class="small"><b>Speed:</b> Detect access and respond fast</span></li>
+              <li><span class="checkdot"></span><span class="small"><b>Continuity:</b> 24/7 monitoring that never pauses</span></li>
             </ul>
 
             <div class="spacer"></div>
@@ -910,6 +935,49 @@
       </div>
     </section>
 
+    <!-- ========================= VISUALS (AFTER HOW IT WORKS) ========================= -->
+    <section id="visuals" class="section alt" aria-label="Security visuals">
+      <div class="row column text-center">
+        <h2 class="section-title">Security in Action</h2>
+        <p class="muted centered">A clean look at what ongoing protection and visibility feels like—without clutter.</p>
+      </div>
+
+      <div class="row small-up-1 medium-up-3 visual-grid" style="margin-top:1.1rem;">
+        <div class="column">
+          <div class="visual-tile">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1800&q=75" alt="Security operations monitoring screens and dashboards">
+            <div class="pad">
+              <div class="tag">Visibility</div>
+              <h5 class="visual-title">Live security visibility</h5>
+              <p class="muted" style="margin:0;">See what matters across devices, users, and exposure—at a glance.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="visual-tile">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1557597774-9d8f7b4b2f3a?auto=format&fit=crop&w=1800&q=75" alt="Alert triage and incident response workflow">
+            <div class="pad">
+              <div class="tag">Detection</div>
+              <h5 class="visual-title">Actionable alert triage</h5>
+              <p class="muted" style="margin:0;">Clean alerts with context—so you can act fast without noise.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="visual-tile">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&w=1800&q=75" alt="Secure infrastructure and resilient systems concept">
+            <div class="pad">
+              <div class="tag">Readiness</div>
+              <h5 class="visual-title">Resilience & continuity</h5>
+              <p class="muted" style="margin:0;">Ongoing hardening and steady monitoring that keeps protection consistent.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ========================= COMPLIANCE ========================= -->
     <section id="compliance" class="section alt">
       <div class="row column text-center">
@@ -953,7 +1021,7 @@
             </p>
             <div class="row">
               <div class="medium-6 columns">
-                <a href="#book" class="button primary expanded">Schedule a Security Consultation</a>
+                <a href="#book" class="button primary expanded">Book a Security Consultation</a>
               </div>
               <div class="medium-6 columns">
                 <a href="mailto:randy@cyberhoundsec.com" class="button hollow expanded">Email randy@cyberhoundsec.com</a>
