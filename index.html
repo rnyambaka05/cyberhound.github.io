@@ -1,1094 +1,1328 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Managed Cybersecurity Services | Cyber Hound Security</title>
-  <meta name="description" content="Cyber Hound Security provides managed cybersecurity protection for businesses—24/7 monitoring, threat detection, vulnerability scanning, endpoint security, incident response support, and strategic security planning." />
-  <meta name="theme-color" content="#000000" />
+<title>Cyber Hound Security | Managed Security Services for SaaS Companies</title>
 
-  <!-- ✅ SEO (safe + legit) -->
-  <meta name="robots" content="index,follow,max-image-preview:large" />
-  <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <meta name="format-detection" content="telephone=yes" />
-  <meta name="author" content="Cyber Hound Security" />
-  <meta name="application-name" content="Cyber Hound Security" />
-  <link rel="canonical" href="https://cyberhound.github.io/" />
-  <link rel="alternate" href="https://cyberhound.github.io/" hreflang="en-us" />
+<meta name="description" content="Cyber Hound Security provides managed security services, 24/7 monitoring, SOC 2 support, risk assessment, phishing training, and cybersecurity guidance for growing SaaS companies." />
+<meta name="theme-color" content="#050607" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<meta name="author" content="Cyber Hound Security LLC" />
 
-  <!-- Performance (optional safe preconnects) -->
-  <link rel="preconnect" href="https://assets.calendly.com" crossorigin />
-  <link rel="preconnect" href="https://code.jquery.com" crossorigin />
-  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
-  <link rel="dns-prefetch" href="//images.unsplash.com" />
+<link rel="canonical" href="https://cyberhoundsec.com/" />
+<link rel="icon" href="assets/favicon.ico" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="preload" as="image" href="./assets/logo.png" />
 
-  <!-- Preload your on-site logo (make sure this path exists) -->
-  <link rel="preload" as="image" href="./assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Social Preview -->
-  <meta property="og:title" content="Cyber Hound Security | Managed Cybersecurity Services" />
-  <meta property="og:type" content="website" />
-  <meta property="og:description" content="Prevent, detect, and respond to cyber threats with 24/7 monitoring, endpoint security, vulnerability scanning, and incident response support." />
-  <meta property="og:url" content="https://cyberhound.github.io/" />
-  <meta property="og:image" content="https://cyberhound.github.io/assets/og-image.png" />
-  <meta property="og:locale" content="en_US" />
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Cyber Hound Security | Managed Cybersecurity Services" />
-  <meta name="twitter:description" content="Managed cybersecurity protection for businesses—monitoring, detection, response, and strategic security planning." />
-  <meta name="twitter:image" content="https://cyberhound.github.io/assets/og-image.png" />
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-  <!-- Icons (SEO/UX; no visual layout impact) -->
-  <link rel="icon" href="assets/favicon.ico" />
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
-  <meta name="msapplication-TileColor" content="#000000" />
+:root{
+  --bg:#050607;
+  --card:#101319;
+  --line:rgba(255,255,255,.10);
+  --soft:rgba(255,255,255,.70);
+  --muted:rgba(255,255,255,.52);
+  --white:#ffffff;
+  --red:#d81f26;
+  --red2:#ff4c54;
+  --red3:#b3151b;
+  --gold:#e7c56e;
+  --shadow:0 38px 130px rgba(0,0,0,.58);
+  --cta-glow:rgba(216,31,38,.22);
+  --cta-glow-strong:rgba(216,31,38,.38);
+}
 
-  <!-- ✅ Structured Data (Organization + Service) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@graph":[
-      {
-        "@type":"Organization",
-        "@id":"https://cyberhound.github.io/#org",
-        "name":"Cyber Hound Security",
-        "url":"https://cyberhound.github.io/",
-        "logo":"https://cyberhound.github.io/assets/logo.png",
-        "image":"https://cyberhound.github.io/assets/og-image.png",
-        "description":"Managed cybersecurity services for businesses: 24/7 monitoring, threat detection, vulnerability scanning, endpoint security management, incident response support, and security reporting.",
-        "email":"randy@cyberhoundsec.net",
-        "telephone":"+1-225-304-4140",
-        "address":{
-          "@type":"PostalAddress",
-          "addressLocality":"Baton Rouge",
-          "addressRegion":"LA",
-          "addressCountry":"US"
-        },
-        "areaServed":[
-          { "@type":"Country", "name":"United States" }
-        ],
-        "contactPoint":[
-          {
-            "@type":"ContactPoint",
-            "telephone":"+1-225-304-4140",
-            "email":"randy@cyberhoundsec.net",
-            "contactType":"sales",
-            "availableLanguage":["en"]
-          }
-        ],
-        "sameAs":[]
-      },
-      {
-        "@type":"WebSite",
-        "@id":"https://cyberhound.github.io/#website",
-        "url":"https://cyberhound.github.io/",
-        "name":"Cyber Hound Security",
-        "publisher":{"@id":"https://cyberhound.github.io/#org"},
-        "inLanguage":"en-US"
-      },
-      {
-        "@type":"WebPage",
-        "@id":"https://cyberhound.github.io/#webpage",
-        "url":"https://cyberhound.github.io/",
-        "name":"Managed Cybersecurity Services | Cyber Hound Security",
-        "isPartOf":{"@id":"https://cyberhound.github.io/#website"},
-        "about":{"@id":"https://cyberhound.github.io/#org"},
-        "inLanguage":"en-US",
-        "primaryImageOfPage":{
-          "@type":"ImageObject",
-          "url":"https://cyberhound.github.io/assets/og-image.png"
-        }
-      },
-      {
-        "@type":"Service",
-        "@id":"https://cyberhound.github.io/#service",
-        "name":"Managed Cybersecurity Services",
-        "provider":{"@id":"https://cyberhound.github.io/#org"},
-        "serviceType":[
-          "Managed cybersecurity monitoring",
-          "Threat detection & alerting",
-          "Vulnerability scanning",
-          "Endpoint security management",
-          "Incident response support",
-          "Security reporting & insights",
-          "Security planning & reviews",
-          "Compliance & security policy support",
-          "Backup & disaster recovery planning",
-          "Executive cybersecurity briefings"
-        ],
-        "areaServed":[
-          { "@type":"Country", "name":"United States" }
-        ]
-      }
-    ]
+html{
+  scroll-behavior:smooth;
+  scroll-padding-top:178px;
+}
+
+body{
+  font-family:"Inter",sans-serif;
+  background:var(--bg);
+  color:var(--white);
+  overflow-x:hidden;
+}
+
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:
+    radial-gradient(circle at 8% 18%, rgba(216,31,38,.22), transparent 34%),
+    radial-gradient(circle at 88% 8%, rgba(255,255,255,.06), transparent 30%),
+    linear-gradient(#050607,#050607);
+  z-index:-5;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+.page-grid{
+  position:fixed;
+  inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size:72px 72px;
+  opacity:.16;
+  pointer-events:none;
+  z-index:-4;
+}
+
+/* ANCHOR SCROLL OFFSET */
+section[id],
+footer[id]{
+  scroll-margin-top:178px;
+}
+
+/* HEADER */
+
+.header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:#000;
+  border-bottom:1px solid rgba(255,255,255,.10);
+}
+
+.nav{
+  width:min(1650px, 96%);
+  margin:0 auto;
+  min-height:150px;
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  align-items:center;
+  gap:64px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  justify-self:start;
+  flex:0 0 auto;
+}
+
+.brand img{
+  height:150px;
+  width:auto;
+  max-height:none;
+  max-width:none;
+  filter:none;
+}
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  justify-self:center;
+  gap:28px;
+  color:#fff;
+  font-size:1.05rem;
+  font-weight:900;
+  white-space:nowrap;
+}
+
+.nav-links a{
+  color:rgba(255,255,255,.95);
+}
+
+.nav-links a:hover{
+  color:#fff;
+}
+
+.nav-actions{
+  display:flex;
+  align-items:center;
+  justify-self:end;
+  gap:12px;
+}
+
+.nav-actions a{
+  white-space:nowrap;
+}
+
+.nav-actions .btn-ghost{
+  min-width:160px;
+}
+
+/* BUTTONS */
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:18px 26px;
+  border-radius:0;
+  font-weight:950;
+  font-size:1.05rem;
+  border:1px solid rgba(255,255,255,.12);
+  transition:transform .15s ease, filter .15s ease, box-shadow .15s ease, background .15s ease;
+  cursor:pointer;
+  line-height:1.1;
+}
+
+.btn-primary{
+  background:linear-gradient(180deg, #ff4c54 0%, var(--red) 42%, var(--red3) 100%);
+  color:#fff !important;
+  box-shadow:
+    0 14px 34px rgba(0,0,0,.18),
+    0 0 18px var(--cta-glow),
+    inset 0 1px 0 rgba(255,255,255,.20);
+}
+
+.btn-primary:hover,
+.btn-primary:focus{
+  transform:translateY(-1px);
+  outline:none;
+  box-shadow:
+    0 18px 48px rgba(0,0,0,.22),
+    0 0 34px var(--cta-glow-strong),
+    inset 0 1px 0 rgba(255,255,255,.22);
+}
+
+.btn-ghost{
+  border-color:rgba(255,255,255,.75);
+  color:rgba(255,255,255,.95);
+  background:rgba(255,255,255,.04);
+}
+
+.btn-ghost:hover,
+.btn-ghost:focus{
+  border-color:rgba(255,255,255,.95);
+  color:#fff;
+  background:rgba(255,255,255,.06);
+  transform:translateY(-1px);
+  box-shadow:0 0 28px rgba(216,31,38,.24);
+  outline:none;
+}
+
+/* HERO */
+
+.hero{
+  position:relative;
+  min-height:calc(100vh - 150px);
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  padding:55px 0 90px;
+  background:
+    linear-gradient(to bottom, rgba(5,6,7,.50), rgba(5,6,7,.80), #050607),
+    url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2400&q=85");
+  background-size:cover;
+  background-position:center;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0;
+  height:220px;
+  background:linear-gradient(to bottom, rgba(5,6,7,0), #050607);
+  z-index:3;
+}
+
+.circuit-animation{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  opacity:.58;
+  pointer-events:none;
+  mix-blend-mode:screen;
+}
+
+.circuit-animation svg{
+  width:100%;
+  height:100%;
+}
+
+.circuit-animation path{
+  fill:none;
+  stroke:rgba(255,255,255,.13);
+  stroke-width:1.15;
+}
+
+.circuit-animation .pulse{
+  stroke:var(--red2);
+  stroke-width:2;
+  stroke-dasharray:14 390;
+  stroke-dashoffset:0;
+  animation:travel 5.8s linear infinite;
+  filter:drop-shadow(0 0 9px rgba(255,55,85,.95));
+}
+
+.circuit-animation .pulse.delay{
+  animation-delay:1.6s;
+}
+
+.circuit-animation .pulse.delay2{
+  animation-delay:3.1s;
+}
+
+@keyframes travel{
+  to{
+    stroke-dashoffset:-450;
   }
-  </script>
+}
 
-  <!-- Foundation CSS -->
-  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css" />
+.hero-inner{
+  width:min(1240px, 92%);
+  margin:0 auto;
+  position:relative;
+  z-index:5;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:54px;
+  align-items:center;
+}
 
-  <!-- Calendly Embed Styles -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+/* HERO PILL */
 
-  <style>
-    :root{
-      --black:#000000;
-      --black2:#0b0b0f;
-      --paper:#f6f7fb;
-      --ink:#0e1222;
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:.65rem;
 
-      --red:#d81f26;
-      --red2:#b3151b;
+  padding:.70rem 1.15rem;
 
-      --chrome:#cfd6e4;
-      --stroke: rgba(0,0,0,.10);
-      --shadow: 0 12px 28px rgba(0,0,0,.08);
+  border-radius:999px;
 
-      --cta-glow: rgba(216,31,38,.22);
-      --cta-glow-strong: rgba(216,31,38,.38);
+  background:rgba(120,18,22,.25);
 
-      /* ✅ Brighter GOLD for WatchPack */
-      --gold:#f2d27a;
-      --gold2:#d9a93f;
+  border:1px solid rgba(216,31,38,.65);
 
-      --blue:#2b6fff;
-      --blue2:#1e4fd6;
-    }
+  color:#ffffff;
+  font-weight:900;
+  font-size:1rem;
+  line-height:1;
 
-    html { scroll-behavior: smooth; }
-    body { color: var(--ink); background: #fff; }
+  margin-bottom:1rem;
 
-    /* ========================= HEADER (BIGGER + GRAND) ========================= */
-    .top-bar{
-      background: #000 !important;
-      border-bottom: 1px solid rgba(255,255,255,.10);
-      padding: 1.25rem 1.15rem; /* ✅ slightly taller to fit bigger logo */
-      position: sticky;
-      top: 0;
-      z-index: 200;
-      min-height: 118px; /* ✅ allow logo to be dominant */
-    }
-    .top-bar, .top-bar *{ background-color: transparent; }
-    .top-bar-left, .top-bar-right, .top-bar ul, .top-bar .menu{ background: transparent !important; }
-    .top-bar a { color: rgba(255,255,255,.95); font-weight: 900; }
-    .top-bar a:hover { color: #fff; }
-    .top-bar-left, .top-bar-right{ display:flex; align-items:center; }
-    .top-bar-left{ flex: 1 1 auto; min-width: 0; }
-    .top-bar-right{ flex: 0 0 auto; }
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
 
-    .top-bar-left .menu{
-      display:flex;
-      align-items:center;
-      gap:.35rem;
-      flex-wrap: nowrap;
-      width: 100%;
-      min-width: 0;
-    }
-    .menu .menu-text { padding: 0; }
+  box-shadow:none;
+}
 
-    /* ========================= BRAND ========================= */
-    .brand{
-      display:flex;
-      align-items:center;
-      text-decoration:none;
-      line-height:1;
-      margin-right: 1.85rem; /* ✅ a touch more breathing room */
-      padding: 0;
-      flex: 0 0 auto;
-    }
-    .brand img{
-      /* ✅ remove any implied constraints and let the logo be dominant */
-      height: 132px;          /* ✅ bigger + more grand */
-      width: auto;
-      max-height: none;       /* ✅ ensure no max-height caps it */
-      max-width: none;        /* ✅ ensure no max-width caps it */
-      display:block;
-      filter: none;
-    }
+.eyebrow::before{
+  content:"";
 
-    .top-bar .menu > li > a{
-      padding: 1.25rem .95rem;
-      font-size: 1.08rem;
-      font-weight: 950;
-      letter-spacing: -0.2px;
-      white-space: nowrap;
-      color:#fff;
-    }
+  width:12px;
+  height:12px;
 
-    /* ========================= BUTTONS ========================= */
-    .button.primary{
-      background: linear-gradient(180deg, #ff4c54 0%, var(--red) 42%, var(--red2) 100%);
-      color: #fff !important;
-      font-weight: 950;
-      border: 1px solid rgba(255,255,255,.12) !important;
-      box-shadow:
-        0 14px 34px rgba(0,0,0,.18),
-        0 0 18px var(--cta-glow),
-        inset 0 1px 0 rgba(255,255,255,.20) !important;
-      transition: transform .15s ease, filter .15s ease, box-shadow .15s ease;
-    }
-    .button.primary:hover, .button.primary:focus{
-      box-shadow:
-        0 18px 48px rgba(0,0,0,.22),
-        0 0 28px var(--cta-glow-strong),
-        inset 0 1px 0 rgba(255,255,255,.22) !important;
-      transform: translateY(-1px);
-      outline: none;
-    }
-    .button.hollow.light{
-      border-color: rgba(255,255,255,.75);
-      color: rgba(255,255,255,.95);
-      font-weight: 950;
-      background: rgba(255,255,255,.04);
-    }
-    .button.hollow.light:hover{
-      border-color: rgba(255,255,255,.95);
-      color:#fff;
-      background: rgba(255,255,255,.06);
-    }
+  border-radius:50%;
 
-    @media (max-width: 980px){
-      .top-bar .menu > li > a{ padding: 1.05rem .72rem; font-size: 1.02rem; }
-      .brand img{ height: 118px; } /* ✅ still large on tablet */
-      .top-bar{ padding: 1.05rem .85rem; min-height: 112px; }
-    }
-    @media (max-width: 740px){
-      .top-bar .menu { flex-wrap: wrap; }
-      .brand{ width:100%; margin-right:0; margin-bottom: .55rem; justify-content:center; }
-      .top-bar{ padding: .95rem .65rem; min-height: unset; }
-      .brand img{ height: 112px; } /* ✅ big but mobile-safe */
-    }
+  background:#ffffff;
 
-    /* ========================= HERO ========================= */
-    .hero{
-      padding: 5.1rem 0 4.2rem;
-      color:#fff;
-      position: relative;
-      background:
-        radial-gradient(900px 450px at 12% 18%, rgba(216,31,38,.18), transparent 60%),
-        radial-gradient(900px 450px at 88% 25%, rgba(207,214,228,.14), transparent 60%),
-        linear-gradient(135deg, rgba(0,0,0,.82), rgba(17,17,26,.62)),
-        url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2400&q=80");
-      background-size: cover;
-      background-position: center;
-    }
-    .hero::before{
-      content:"";
-      position:absolute;
-      inset:0;
-      background: radial-gradient(900px 520px at 55% 30%, rgba(255,255,255,.10), transparent 60%);
-      pointer-events:none;
-    }
-    /* ✅ readability overlay (visual contrast only; no layout/text changes) */
-    .hero::after{
-      content:"";
-      position:absolute;
-      inset:0;
-      background: linear-gradient(180deg, rgba(0,0,0,.26) 0%, rgba(0,0,0,.18) 55%, rgba(0,0,0,.22) 100%);
-      pointer-events:none;
-    }
-    .hero > .row{ position:relative; z-index:1; }
+  box-shadow:
+    0 0 0 6px rgba(216,31,38,.18);
 
-    .pill{
-      display:inline-flex;
-      align-items:center;
-      gap:.55rem;
-      padding:.60rem 1.05rem;
-      border-radius: 999px;
-      background: rgba(216,31,38,.18);
-      border: 1px solid rgba(216,31,38,.35);
-      color: rgba(255,255,255,.95);
-      font-weight: 950;
-      font-size: .98rem;
-      margin-bottom: 1rem;
-      backdrop-filter: blur(10px);
-    }
-    .pill .dot{
-      width:10px;height:10px;border-radius:999px;
-      background: #fff;
-      box-shadow: 0 0 0 5px rgba(216,31,38,.20);
-    }
+  flex-shrink:0;
+}
 
-    .hero h1{
-      font-weight: 950;
-      letter-spacing: -1.1px;
-      margin-bottom:.65rem;
-      font-size: clamp(2.35rem, 4.6vw, 3.55rem);
-      line-height: 1.05;
-      /* ✅ readability only */
-      text-shadow: 0 2px 16px rgba(0,0,0,.35);
-    }
-    .hero .lead{
-      color: rgba(255,255,255,.97); /* ✅ brighter for readability */
-      max-width: 70ch;
-      margin: .9rem auto 1.55rem;
-      font-size: 1.18rem;
-      font-weight: 650;            /* ✅ slightly stronger */
-      text-shadow: 0 2px 14px rgba(0,0,0,.35); /* ✅ contrast */
-    }
-    .hero-card{
-      background: rgba(255,255,255,.08);
-      border: 1px solid rgba(255,255,255,.16);
-      border-radius: 18px;
-      padding: 1.15rem 1.25rem;
-      backdrop-filter: blur(10px);
-      text-align:left;
-      box-shadow: 0 18px 55px rgba(0,0,0,.28);
-    }
-    .hero-card b { color:#fff; font-weight: 950; }
-    .hero-card .small { color: rgba(255,255,255,.90); font-weight: 650; }
-    .hero-card .title{
-      display:inline-block;
-      padding-bottom: .25rem;
-      border-bottom: 2px solid rgba(216,31,38,.55);
-      text-shadow: 0 0 14px rgba(216,31,38,.22);
-    }
-    .checks{
-      list-style:none;
-      margin:0;
-      padding:0;
-      display:grid;
-      gap:.7rem;
-    }
-    .checks li{
-      display:flex;
-      gap:.65rem;
-      align-items:flex-start;
-      color: rgba(255,255,255,.93);
-    }
-    .checkdot{
-      width:10px;height:10px;border-radius: 999px;
-      background: var(--red);
-      margin-top:.38rem;
-      flex: 0 0 auto;
-      box-shadow: 0 0 0 4px rgba(216,31,38,.18);
-    }
+/* HERO HEADLINE */
 
-    /* ========================= SECTIONS ========================= */
-    .section { padding: 3.8rem 0; }
-    .section.alt {
-      background:
-        radial-gradient(900px 500px at 15% 20%, rgba(216,31,38,.08), transparent 60%),
-        radial-gradient(900px 500px at 85% 65%, rgba(207,214,228,.10), transparent 60%),
-        var(--paper);
-    }
-    .section-title{
-      font-weight: 950;
-      letter-spacing: -0.7px;
-      margin-bottom: .75rem;
-      font-size: clamp(2rem, 2.4vw, 2.5rem);
-      line-height: 1.08;
-    }
-    .muted { color: rgba(0,0,0,.62); }
-    .centered { max-width: 74ch; margin-left:auto; margin-right:auto; }
-    .tight { margin-top: .4rem; }
-    .spacer{ height: 1rem; }
+.hero h1{
+  font-size:clamp(3.3rem, 6.2vw, 6.55rem);
+  line-height:.95;
+  letter-spacing:-.055em;
+  font-weight:800;
+  max-width:940px;
+}
 
-    /* ========================= CARDS ========================= */
-    .card{
-      border: 1px solid rgba(0,0,0,.08);
-      border-radius: 18px;
-      padding: 1.2rem;
-      box-shadow: var(--shadow);
-      height: 100%;
-      background: #fff;
-    }
-    .card h4, .card h5 { font-weight: 950 !important; letter-spacing: -0.3px; }
+.hero-subline{
+  margin-top:18px;
+  font-size:clamp(1.55rem, 3vw, 2.45rem);
+  line-height:1.1;
+  letter-spacing:-.045em;
+  font-weight:800;
+  color:rgba(255,255,255,.88);
+}
 
-    /* ✅ Make service pills RED by default */
-    .tag{
-      display:inline-block;
-      font-weight: 950;
-      font-size: .82rem;
-      color: rgba(255,255,255,.96);
-      background: rgba(216,31,38,.92);
-      border: 1px solid rgba(255,255,255,.10);
-      padding: .28rem .6rem;
-      border-radius: 999px;
-      margin-bottom: .65rem;
-      box-shadow: 0 10px 20px rgba(0,0,0,.10), 0 0 18px rgba(216,31,38,.12);
-    }
+.hero-copy{
+  margin-top:26px;
+  max-width:680px;
+  color:rgba(255,255,255,.84);
+  font-size:1.15rem;
+  line-height:1.75;
+}
 
-    /* Package tags (color-coded) */
-    .tag.gold{ background: linear-gradient(180deg, var(--gold) 0%, var(--gold2) 100%); color:#111; border-color: rgba(0,0,0,.10); }
-    .tag.blue{ background: linear-gradient(180deg, var(--blue) 0%, var(--blue2) 100%); }
-    .tag.red{ background: linear-gradient(180deg, #ff4c54 0%, var(--red) 45%, var(--red2) 100%); }
+.hero-actions{
+  margin-top:34px;
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
 
-    /* Services tiles */
-    .services-grid{ display:flex; flex-wrap: wrap; }
-    .services-grid .column{ display:flex; }
-    .tile{
-      border-radius: 18px;
-      overflow: hidden;
-      border: 1px solid rgba(0,0,0,.08);
-      box-shadow: var(--shadow);
-      background: #fff;
-      width: 100%;
-      display:flex;
-      flex-direction: column;
-    }
-    .tile img{
-      width:100%;
-      height: 190px;
-      object-fit: cover;
-      display:block;
-      flex: 0 0 auto;
-    }
-    .tile .pad{
-      padding: 1rem 1.15rem 1.2rem;
-      display:flex;
-      flex-direction: column;
-      flex: 1 1 auto;
-    }
-    .service-title{
-      font-weight: 950 !important;
-      letter-spacing: -0.3px;
-      font-size: 1.25rem;
-      line-height: 1.2;
-      margin: 0 0 .45rem;
-    }
-    .services-grid .tile{ height: 420px; }
+/* HERO PANEL */
 
-    /* Packages */
-    .pricing-grid{ display:flex; flex-wrap: wrap; }
-    .pricing-grid .column{ display:flex; }
-    .pricing-grid .card{
-      width:100%;
-      height: 590px;
-      display:flex;
-      flex-direction: column;
-      position: relative;
-      overflow: hidden;
-    }
-    .plan-accent{
-      position:absolute; inset:-2px;
-      background: radial-gradient(520px 240px at 30% 0%, rgba(216,31,38,.14), transparent 60%),
-                  radial-gradient(520px 240px at 90% 40%, rgba(207,214,228,.18), transparent 60%);
-      pointer-events:none;
-    }
-    .plan-inner{ position:relative; display:flex; flex-direction:column; height:100%; }
-    .plan-head{
-      display:flex;
-      align-items:center;
-      gap:.0rem;
-      margin-bottom:.3rem;
-    }
+.hero-panel{
+  border-radius:18px;
+  padding:1.35rem 1.45rem;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.16);
+  backdrop-filter:blur(10px);
+  text-align:left;
+  box-shadow:0 18px 55px rgba(0,0,0,.28);
+}
 
-    /* ✅ Alignment fix: make content stretch so "Best for" + buttons line up across cards */
-    .plan-content{
-      flex: 1 1 auto;
-      display:flex;
-      flex-direction: column;
-      min-height: 0;
-    }
-    .plan-content .bestfor{
-      margin-top: auto; /* push "Best for" to same baseline */
-    }
-    .plan-cta{
-      margin-top: .85rem;
-    }
+.panel-title{
+  display:inline-block;
+  padding-bottom:.35rem;
+  border-bottom:2px solid rgba(216,31,38,.55);
+  text-shadow:0 0 14px rgba(216,31,38,.22);
+  font-size:1.65rem;
+  line-height:1.15;
+  color:#fff;
+  font-weight:950;
+  margin-bottom:1.15rem;
+  letter-spacing:-.04em;
+}
 
-    /* How it works equal height */
-    .how-grid .card{ min-height: 230px; }
+.signal-list{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:grid;
+  gap:.95rem;
+}
 
-    /* Contact/Calendly wrap */
-    .cal-wrap{
-      border: 1px solid rgba(0,0,0,.08);
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      background:#fff;
-    }
+.signal{
+  display:flex;
+  gap:.7rem;
+  align-items:flex-start;
+  color:rgba(255,255,255,.93);
+  padding:0;
+  border:none;
+  background:transparent;
+}
 
-    /* ✅ Compliance section subtle premium visuals (clean + readable) */
-    #compliance{
-      position: relative;
-      overflow: hidden;
-    }
-    #compliance::before{
-      content:"";
-      position:absolute;
-      inset:-2px;
-      pointer-events:none;
-      background:
-        radial-gradient(720px 360px at 18% 25%, rgba(216,31,38,.10), transparent 62%),
-        radial-gradient(820px 420px at 82% 70%, rgba(43,111,255,.10), transparent 62%),
-        linear-gradient(90deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,.12) 50%, rgba(255,255,255,0) 75%, rgba(255,255,255,.10) 100%),
-        linear-gradient(rgba(0,0,0,.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0,0,0,.030) 1px, transparent 1px);
-      background-size:
-        auto,
-        auto,
-        auto,
-        44px 44px,
-        44px 44px;
-      background-position:
-        center,
-        center,
-        center,
-        top left,
-        top left;
-      opacity: .55; /* subtle */
-      mix-blend-mode: normal;
-    }
-    #compliance > .row{ position: relative; z-index: 1; }
+.signal::before{
+  content:"";
+  width:10px;
+  height:10px;
+  border-radius:999px;
+  background:var(--red);
+  margin-top:.45rem;
+  flex:0 0 auto;
+  box-shadow:0 0 0 4px rgba(216,31,38,.18);
+}
 
-    /* Footer */
-    .footer{
-      background: rgba(0,0,0,.98);
-      color:#fff;
-      padding: 2.2rem 0;
-    }
-    .footer a{ color:#fff; font-weight:800; }
-    .footer a:hover{ color: rgba(255,255,255,.85); }
-  </style>
+.signal strong{
+  display:block;
+  color:#fff;
+  font-size:1.06rem;
+  line-height:1.3;
+  margin-bottom:.25rem;
+  font-weight:950;
+}
+
+.signal p{
+  color:rgba(255,255,255,.84);
+  line-height:1.55;
+  font-size:.96rem;
+}
+
+/* PLATFORM MARQUEE */
+
+.platform-section{
+  margin-top:-70px;
+  position:relative;
+  z-index:10;
+}
+
+.platform-card{
+  width:min(1240px, 92%);
+  margin:0 auto;
+  border-radius:28px;
+  overflow:hidden;
+  background:rgba(255,255,255,.065);
+  border:1px solid rgba(255,255,255,.12);
+  backdrop-filter:blur(24px);
+  box-shadow:0 28px 90px rgba(0,0,0,.42);
+  padding:24px 0;
+}
+
+.platform-label{
+  text-align:center;
+  font-size:.78rem;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-weight:900;
+  color:rgba(255,255,255,.62);
+  margin-bottom:18px;
+}
+
+.marquee{
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.marquee-track{
+  display:inline-flex;
+  gap:18px;
+  animation:marquee 28s linear infinite;
+}
+
+.platform-pill{
+  padding:13px 18px;
+  border-radius:999px;
+  background:rgba(255,255,255,.065);
+  border:1px solid rgba(255,255,255,.10);
+  color:rgba(255,255,255,.88);
+  font-weight:800;
+  font-size:.92rem;
+}
+
+@keyframes marquee{
+  from{ transform:translateX(0); }
+  to{ transform:translateX(-50%); }
+}
+
+/* SECTIONS */
+
+.section{
+  padding:110px 0;
+  position:relative;
+}
+
+.container{
+  width:min(1240px, 92%);
+  margin:0 auto;
+}
+
+.section-head{
+  max-width:830px;
+  margin-bottom:52px;
+}
+
+.section-kicker{
+  color:var(--red2);
+  font-weight:900;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  font-size:.78rem;
+  margin-bottom:16px;
+}
+
+.section h2{
+  font-size:clamp(2.2rem, 4vw, 4.6rem);
+  line-height:.98;
+  letter-spacing:-.065em;
+  font-weight:900;
+}
+
+.section-desc{
+  margin-top:20px;
+  color:var(--soft);
+  line-height:1.78;
+  font-size:1.04rem;
+}
+
+.grid-3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.grid-2{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+}
+
+.card{
+  position:relative;
+  overflow:hidden;
+  border-radius:28px;
+  padding:28px;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.035)),
+    rgba(12,14,19,.88);
+  border:1px solid rgba(255,255,255,.10);
+  box-shadow:0 26px 90px rgba(0,0,0,.38);
+}
+
+.card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at 82% 0%, rgba(209,0,40,.14), transparent 34%);
+  pointer-events:none;
+}
+
+.card > *{
+  position:relative;
+  z-index:2;
+}
+
+.card h3{
+  font-size:1.35rem;
+  letter-spacing:-.03em;
+  margin-bottom:12px;
+}
+
+.card p{
+  color:var(--soft);
+  line-height:1.72;
+}
+
+.tag{
+  display:inline-flex;
+  margin-bottom:18px;
+  padding:8px 11px;
+  border-radius:999px;
+  font-size:.72rem;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-weight:900;
+  color:#fff;
+  background:rgba(209,0,40,.18);
+  border:1px solid rgba(209,0,40,.30);
+}
+
+.image-card{
+  min-height:370px;
+  padding:0;
+}
+
+.image-card .image{
+  height:190px;
+  background-size:cover;
+  background-position:center;
+  border-bottom:1px solid rgba(255,255,255,.10);
+}
+
+.image-card .content{
+  padding:26px;
+}
+
+/* ABOUT */
+
+.about-section{
+  background:
+    radial-gradient(circle at 16% 0%, rgba(209,0,40,.13), transparent 34%),
+    #07080b;
+}
+
+.about-wrap{
+  display:grid;
+  grid-template-columns:.95fr 1.05fr;
+  gap:34px;
+  align-items:stretch;
+}
+
+.about-visual{
+  border-radius:34px;
+  min-height:520px;
+  background:
+    linear-gradient(to bottom, rgba(5,6,7,.10), rgba(5,6,7,.72)),
+    url("https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=85");
+  background-size:cover;
+  background-position:center;
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:var(--shadow);
+}
+
+.about-copy{
+  border-radius:34px;
+  padding:38px;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.09), rgba(255,255,255,.034)),
+    rgba(12,14,19,.90);
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:var(--shadow);
+}
+
+.about-copy p{
+  color:var(--soft);
+  line-height:1.8;
+  margin-top:18px;
+}
+
+/* RESOURCES */
+
+.resources{
+  background:#07080b;
+}
+
+.resource-link{
+  margin-top:24px;
+  display:inline-flex;
+  color:#fff;
+  font-weight:850;
+  border-bottom:1px solid rgba(209,0,40,.8);
+  padding-bottom:5px;
+}
+
+/* FAQ */
+
+.faq{
+  display:grid;
+  gap:14px;
+}
+
+.faq-item{
+  border-radius:22px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(255,255,255,.045);
+}
+
+.faq-question{
+  width:100%;
+  padding:22px;
+  border:none;
+  background:none;
+  color:#fff;
+  font:inherit;
+  font-weight:850;
+  font-size:1rem;
+  text-align:left;
+  cursor:pointer;
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.faq-question span{
+  color:var(--red2);
+  font-weight:900;
+}
+
+.faq-answer{
+  display:none;
+  padding:0 22px 22px;
+  color:var(--soft);
+  line-height:1.75;
+}
+
+.faq-item.active .faq-answer{
+  display:block;
+}
+
+/* BOOK */
+
+.book-card{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:30px;
+  border-radius:34px;
+  padding:34px;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.10), rgba(255,255,255,.035)),
+    rgba(10,12,16,.9);
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:var(--shadow);
+}
+
+.book-card p{
+  color:var(--soft);
+  line-height:1.75;
+}
+
+.calendly-inline-widget{
+  border-radius:24px;
+  overflow:hidden;
+  background:#fff;
+}
+
+/* NEWSLETTER */
+
+.newsletter{
+  border-radius:34px;
+  padding:38px;
+  background:
+    linear-gradient(135deg, rgba(209,0,40,.18), rgba(255,255,255,.04)),
+    rgba(12,14,19,.88);
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:var(--shadow);
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:24px;
+  align-items:center;
+}
+
+.newsletter p{
+  color:var(--soft);
+  line-height:1.75;
+  margin-top:12px;
+}
+
+.newsletter-form{
+  display:flex;
+  gap:10px;
+}
+
+.newsletter-form input{
+  min-width:280px;
+  padding:15px 16px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.08);
+  color:#fff;
+  outline:none;
+}
+
+.newsletter-form input::placeholder{
+  color:rgba(255,255,255,.48);
+}
+
+/* FOOTER */
+
+.footer{
+  padding:54px 0;
+  border-top:1px solid rgba(255,255,255,.08);
+  color:rgba(255,255,255,.62);
+}
+
+.footer-inner{
+  width:min(1240px,92%);
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+  gap:22px;
+  flex-wrap:wrap;
+}
+
+.footer strong{
+  color:#fff;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:980px){
+  html{
+    scroll-padding-top:190px;
+  }
+
+  section[id],
+  footer[id]{
+    scroll-margin-top:190px;
+  }
+
+  .nav{
+    width:min(1240px, 94%);
+    display:flex;
+    flex-wrap:wrap;
+    padding:12px 0;
+    gap:20px;
+  }
+
+  .nav-links{
+    order:3;
+    width:100%;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:16px;
+  }
+
+  .brand img{
+    height:118px;
+  }
+
+  .hero-inner,
+  .about-wrap,
+  .book-card,
+  .newsletter{
+    grid-template-columns:1fr;
+  }
+
+  .grid-3,
+  .grid-2{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:680px){
+  html{
+    scroll-padding-top:230px;
+  }
+
+  section[id],
+  footer[id]{
+    scroll-margin-top:230px;
+  }
+
+  .nav-actions{
+    width:100%;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  .brand{
+    width:100%;
+    justify-content:center;
+  }
+
+  .brand img{
+    height:112px;
+  }
+
+  .grid-3,
+  .grid-2{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    padding-top:70px;
+  }
+
+  .hero-actions,
+  .newsletter-form{
+    flex-direction:column;
+  }
+
+  .btn,
+  .newsletter-form input{
+    width:100%;
+  }
+
+  .hero h1{
+    font-size:clamp(3rem, 14vw, 4.8rem);
+    letter-spacing:-.045em;
+  }
+}
+</style>
 </head>
 
 <body>
-  <!-- ========================= TOP BAR ========================= -->
-  <header class="top-bar" role="banner">
-    <nav aria-label="Primary">
-      <div class="top-bar-left">
-        <ul class="menu">
-          <li class="menu-text">
-            <a href="#top" class="brand" aria-label="Cyber Hound Security Home">
-              <img src="./assets/logo.png" alt="Cyber Hound Security logo">
-            </a>
-          </li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#packages">Packages</a></li>
-          <li><a href="#how">How It Works</a></li>
-          <li><a href="#compliance">Compliance</a></li>
-          <li><a href="#book">Book</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
 
-      <div class="top-bar-right">
-        <ul class="menu">
-          <li><a href="tel:+12253044140">(225) 304-4140</a></li>
-          <li><a class="button small primary" href="#book" style="margin:0;">Book a Consult</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+<div class="page-grid"></div>
 
-  <main id="main-content">
-    <!-- ========================= HERO ========================= -->
-    <section id="top" class="hero" aria-label="Hero">
-      <div class="row">
-        <div class="medium-7 columns text-center medium-text-left">
-          <div class="pill"><span class="dot"></span> 24/7 coverage • Clear reporting • Managed security</div>
+<header class="header">
+  <nav class="nav">
+    <a href="#" class="brand" aria-label="Cyber Hound Security Home">
+      <img src="./assets/logo.png" alt="Cyber Hound Security logo">
+    </a>
 
-          <h1>Managed cybersecurity that keeps your business protected.</h1>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#platforms">Platforms</a>
+      <a href="#resources">Resources</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book">Book</a>
+      <a href="#contact">Contact</a>
+    </div>
 
-          <p class="lead">
-            Cyber Hound Security helps businesses <b>prevent</b>, <b>detect</b>, and <b>respond</b> to cyber threats with
-            continuous monitoring, endpoint security management, vulnerability scanning, and incident response support.
-          </p>
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="tel:+12253044140">(225) 304-4140</a>
+      <a class="btn btn-primary" href="#book">Book an Assessment</a>
+    </div>
+  </nav>
+</header>
 
-          <div>
-            <a href="#book" class="button large primary">Book a Security Consultation</a>
-            <a href="#contact" class="button large hollow light">Request a Call Back</a>
-          </div>
+<main id="top">
 
-          <div class="spacer"></div>
+<section class="hero">
+  <div class="circuit-animation">
+    <svg viewBox="0 0 1400 800" preserveAspectRatio="none">
+      <path d="M0 190 H260 V310 H520 V220 H780 V355 H1080 V250 H1400" />
+      <path d="M0 470 H180 V390 H430 V530 H720 V440 H980 V560 H1400" />
+      <path d="M170 0 V180 H340 V290 H620 V170 H920 V330 H1220 V800" />
+      <path d="M0 650 H310 V560 H590 V650 H870 V545 H1160 V620 H1400" />
 
-          <p style="margin:0; color: rgba(255,255,255,.88); font-size: 1rem; font-weight: 750; text-shadow: 0 2px 12px rgba(0,0,0,.30);">
-            Based in Baton Rouge,LA. Trusted by teams across the U.S. (fully remote support available).
-          </p>
-        </div>
+      <path class="pulse" d="M0 190 H260 V310 H520 V220 H780 V355 H1080 V250 H1400" />
+      <path class="pulse delay" d="M0 470 H180 V390 H430 V530 H720 V440 H980 V560 H1400" />
+      <path class="pulse delay2" d="M0 650 H310 V560 H590 V650 H870 V545 H1160 V620 H1400" />
+    </svg>
+  </div>
 
-        <div class="medium-5 columns">
-          <div class="hero-card">
-            <b class="title">What we focus on</b>
-            <div class="spacer"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">24/7 coverage • Clear reporting • Managed security</div>
 
-            <!-- ✅ exactly 3 bullets: Visibility, Speed, Continuity -->
-            <ul class="checks">
-              <li><span class="checkdot"></span><span class="small"><b>Visibility:</b> Know what’s working, what’s exposed, and what needs attention.</span></li>
-              <li><span class="checkdot"></span><span class="small"><b>Speed:</b> Fast detection and response to threats before they disrupt your business.</span></li>
-              <li><span class="checkdot"></span><span class="small"><b>Continuity:</b> 24/7 monitoring that never stops, keeping your systems watched at all times.</span></li>
-            </ul>
+      <h1>Managed Security Services</h1>
 
-            <div class="spacer"></div>
+      <div class="hero-subline">Built for growing SaaS companies.</div>
 
-            <span class="small">Security support that adapts as your organization grows.</span>
-          </div>
-        </div>
-      </div>
-    </section>
+      <p class="hero-copy">
+        24/7 security monitoring, compliance support, and ongoing cybersecurity guidance from a dedicated team.
+      </p>
 
-    <!-- ========================= SERVICES (TOP 6 ONLY) ========================= -->
-    <section id="services" class="section">
-      <div class="row column text-center">
-        <h2 class="section-title">Managed Cybersecurity Services</h2>
-        <p class="muted centered">
-          Straightforward security coverage with clear visibility and fast help when something needs attention.
-        </p>
-      </div>
-
-      <div class="row small-up-1 medium-up-3 services-grid">
-        <div class="column">
-          <div class="tile">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=70" alt="24/7 cybersecurity monitoring dashboard for managed security">
-            <div class="pad">
-              <div class="tag">24/7 Monitoring</div>
-              <div class="service-title">Continuous monitoring</div>
-              <p class="muted">Ongoing visibility into networks and devices to spot risk early and reduce blind spots.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="tile">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1563986768711-b3bde3dc821e?auto=format&fit=crop&w=1600&q=70" alt="Threat detection alerts and incident indicators">
-            <div class="pad">
-              <div class="tag">Threat Alerts</div>
-              <div class="service-title">Threat detection & alerting</div>
-              <p class="muted">Actionable alerts so the right issues get attention fast—without noise and confusion.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="tile">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=1600&q=70" alt="Vulnerability scanning and remediation workflow">
-            <div class="pad">
-              <div class="tag">Vuln Scans</div>
-              <div class="service-title">Vulnerability scanning</div>
-              <p class="muted">Regular scanning to find weaknesses and guide fixes that reduce exposure over time.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="tile">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1556155092-8707de31f9c4?auto=format&fit=crop&w=1600&q=70" alt="Endpoint security protection on managed devices">
-            <div class="pad">
-              <div class="tag">Endpoints</div>
-              <div class="service-title">Endpoint security management</div>
-              <p class="muted">Stronger device protection with managed security controls and continuous improvements.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="tile">
-            <!-- ✅ Updated to a more incident-response themed visual -->
-            <img loading="lazy" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1600&q=70" alt="Incident response support and coordinated response planning">
-            <div class="pad">
-              <div class="tag">Response</div>
-              <div class="service-title">Incident response support</div>
-              <p class="muted">Guidance during cyber events—containment steps, recovery planning, and next actions.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="tile">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&w=1600&q=70" alt="Security reporting and executive-ready risk insights">
-            <div class="pad">
-              <div class="tag">Reporting</div>
-              <div class="service-title">Security reporting & insights</div>
-              <p class="muted">Leader-friendly reporting so you understand risk, trends, and what’s improving.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Quick Form -->
-      <div class="row" style="margin-top:2.2rem;">
-        <div class="medium-8 medium-centered columns">
-          <div class="card">
-            <h4 style="margin-bottom:.25rem;"><strong>Want us to reach out?</strong></h4>
-            <p class="muted" style="margin-top:0;">Send a quick request and we’ll respond ASAP.</p>
-
-            <form action="https://formspree.io/f/xaqbdooj" method="POST">
-              <input type="hidden" name="_subject" value="New Lead — Cyber Hound Security Website">
-              <input type="hidden" name="_gotcha" style="display:none">
-              <input type="hidden" name="_next" value="#thankyou-services">
-
-              <label>Full Name
-                <input type="text" name="name" placeholder="Your name" required>
-              </label>
-
-              <div class="row">
-                <div class="medium-6 columns">
-                  <label>Phone (optional)
-                    <input type="text" name="phone" placeholder="(xxx) xxx-xxxx">
-                  </label>
-                </div>
-                <div class="medium-6 columns">
-                  <label>Email
-                    <input type="email" name="email" placeholder="you@company.com" required>
-                  </label>
-                </div>
-              </div>
-
-              <label>What do you need help with?
-                <select name="need" required>
-                  <option value="" disabled selected>Select one</option>
-                  <option>24/7 Monitoring & Alerts</option>
-                  <option>Endpoint Security Management</option>
-                  <option>Vulnerability Scanning</option>
-                  <option>Incident Response Support</option>
-                  <option>Security Reporting & Insights</option>
-                  <option>Not sure (recommend a package)</option>
-                </select>
-              </label>
-
-              <label>Brief details (optional)
-                <textarea name="details" rows="4" placeholder="Example: 25 devices, phishing issues, ransomware concern, vendor questionnaire..."></textarea>
-              </label>
-
-              <button type="submit" class="button primary expanded">Send Request</button>
-
-              <p class="muted" style="font-size:.9rem; margin: .75rem 0 0;">
-                By submitting, you agree we may contact you by phone/text/email.
-              </p>
-            </form>
-
-            <div id="thankyou-services" style="margin-top:1rem;"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================= PACKAGES ========================= -->
-    <section id="packages" class="section alt">
-      <div class="row column text-center">
-        <h2 class="section-title">Packages</h2>
-        <p class="muted centered">
-          Three managed options—built to match your risk level and the maturity of your environment.
-          Pricing is customized after a quick call.
-        </p>
-      </div>
-
-      <div class="row small-up-1 medium-up-3 pricing-grid">
-        <!-- WATCHPACK (GOLD) -->
-        <div class="column">
-          <div class="card">
-            <div class="plan-accent" aria-hidden="true"></div>
-            <div class="plan-inner">
-              <div class="plan-head">
-                <div>
-                  <div class="tag gold">WatchPack</div>
-                </div>
-              </div>
-
-              <div class="plan-content">
-                <h4><strong>Foundational monitoring & visibility</strong></h4>
-                <ul class="muted" style="margin-left:1.1rem;">
-                  <li>Continuous monitoring & alerting</li>
-                  <li>Baseline reporting & risk insights</li>
-                  <li>Prioritized security recommendations</li>
-                  <li>Light guidance for phishing & user risk</li>
-                </ul>
-                <p class="muted tight bestfor"><strong>Best for:</strong> small teams needing consistent security coverage.</p>
-              </div>
-
-              <div class="plan-cta">
-                <a href="#book" class="button primary expanded">Book a Consult</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- BYTEPACK (BLUE) -->
-        <div class="column">
-          <div class="card">
-            <div class="plan-accent" aria-hidden="true"></div>
-            <div class="plan-inner">
-              <div class="plan-head">
-                <div>
-                  <div class="tag blue">BytePack</div>
-                </div>
-              </div>
-
-              <div class="plan-content">
-                <h4><strong>Managed security + ongoing hardening</strong></h4>
-                <ul class="muted" style="margin-left:1.1rem;">
-                  <li>Everything in WatchPack</li>
-                  <li>Regular vulnerability scanning</li>
-                  <li>Endpoint security management</li>
-                  <li>Incident response support (as needed)</li>
-                  <li>Monthly review + action plan</li>
-                </ul>
-                <p class="muted tight bestfor"><strong>Best for:</strong> growing businesses that need prevention + response readiness.</p>
-              </div>
-
-              <div class="plan-cta">
-                <a href="#book" class="button primary expanded">Book a Consult</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ALPHAPACK (RED) -->
-        <div class="column">
-          <div class="card">
-            <div class="plan-accent" aria-hidden="true"></div>
-            <div class="plan-inner">
-              <div class="plan-head">
-                <div>
-                  <div class="tag red">AlphaPack</div>
-                </div>
-              </div>
-
-              <div class="plan-content">
-                <h4><strong>High assurance + advanced security work</strong></h4>
-                <ul class="muted" style="margin-left:1.1rem;">
-                  <li>Everything in BytePack</li>
-                  <li>Advanced threat hunting & testing</li>
-                  <li>Policies & compliance documentation</li>
-                  <li>Backup/DR planning + readiness exercises</li>
-                  <li>Executive-level briefings</li>
-                </ul>
-                <p class="muted tight bestfor"><strong>Best for:</strong> higher-risk environments or teams with compliance pressure.</p>
-              </div>
-
-              <div class="plan-cta">
-                <a href="#book" class="button primary expanded">Book a Consult</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row" style="margin-top:1.6rem;">
-        <div class="medium-9 medium-centered columns">
-          <div class="card">
-            <h4 style="margin-bottom:.25rem;"><strong>Not sure which package fits?</strong></h4>
-            <p class="muted" style="margin-top:0;">
-              Schedule a quick call. We’ll review your environment, goals, and risk—then recommend the right level of coverage.
-            </p>
-            <div class="row">
-              <div class="medium-6 columns">
-                <a href="#book" class="button primary expanded">Book a Security Consultation</a>
-              </div>
-              <div class="medium-6 columns">
-                <a href="tel:+12253044140" class="button hollow expanded">Call (225) 304-4140</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================= HOW IT WORKS ========================= -->
-    <section id="how" class="section">
-      <div class="row column text-center">
-        <h2 class="section-title">How It Works</h2>
-        <p class="muted centered">A simple onboarding process that starts fast—and improves your security month by month.</p>
-      </div>
-
-      <div class="row small-up-1 medium-up-3 how-grid">
-        <div class="column">
-          <div class="card">
-            <div class="tag">Step 1</div>
-            <h4><strong>Assess & scope</strong></h4>
-            <p class="muted">We identify devices, priorities, risk areas, and any requirements so we can build the right plan.</p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <div class="tag">Step 2</div>
-            <h4><strong>Deploy & monitor</strong></h4>
-            <p class="muted">We deploy monitoring and endpoint coverage, configure alerting, and establish a strong baseline.</p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <div class="tag">Step 3</div>
-            <h4><strong>Improve & report</strong></h4>
-            <p class="muted">You get clear reporting, prioritized fixes, and ongoing improvements—plus support during incidents.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================= COMPLIANCE ========================= -->
-    <section id="compliance" class="section alt">
-      <div class="row column text-center">
-        <h2 class="section-title">Compliance & Policy Support</h2>
-        <p class="muted centered">
-          We help you organize documentation, policies, and reporting to support real-world business requirements—
-          insurance questionnaires, vendor security reviews, and internal governance.
-        </p>
-      </div>
-
-      <div class="row small-up-1 medium-up-3" style="margin-top:1.1rem;">
-        <div class="column">
-          <div class="card">
-            <div class="tag">Documentation</div>
-            <h4><strong>Evidence-ready reporting</strong></h4>
-            <p class="muted">Get reports you can use for leadership updates, vendor questionnaires, and risk tracking.</p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <div class="tag">Policies</div>
-            <h4><strong>Security policies that make sense</strong></h4>
-            <p class="muted">Practical policies your team can actually follow—aligned to your business and tools.</p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <div class="tag">Readiness</div>
-            <h4><strong>Response planning & tabletop support</strong></h4>
-            <p class="muted">We help you prepare for incidents with clear steps, roles, and realistic exercises.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row" style="margin-top:1.4rem;">
-        <div class="medium-10 medium-centered columns">
-          <div class="card">
-            <h4 style="margin-bottom:.25rem;"><strong>Make security understandable for leaders.</strong></h4>
-            <p class="muted" style="margin-top:0;">
-              You get executive-friendly insights, a clear action plan, and a security posture you can explain to partners and stakeholders.
-            </p>
-            <div class="row">
-              <div class="medium-6 columns">
-                <a href="#book" class="button primary expanded">Schedule a Security Consultation</a>
-              </div>
-              <div class="medium-6 columns">
-                <a href="mailto:randy@cyberhoundsec.net" class="button hollow expanded">Email randy@cyberhoundsec.net</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================= BOOK (CALENDLY) ========================= -->
-    <section id="book" class="section">
-      <div class="row column text-center">
-        <h2 class="section-title">Schedule Your Security Call</h2>
-        <p class="muted centered">
-          Choose a time that works for you. Prefer phone or email? We’ll schedule it together.
-        </p>
-
-        <div style="margin-top:.75rem;">
-          <a href="tel:+12253044140" class="button hollow">Call (225) 304-4140</a>
-          <a href="mailto:randy@cyberhoundsec.net" class="button primary">Email Us</a>
-        </div>
-      </div>
-
-      <div class="row" style="margin-top:1.6rem;">
-        <div class="medium-10 medium-centered columns">
-          <div class="cal-wrap">
-            <div class="calendly-inline-widget"
-                 data-url="https://calendly.com/randy-cyberhoundsec-gbds/30min"
-                 style="min-width:320px;height:820px;"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================= CONTACT ========================= -->
-    <section id="contact" class="section alt">
-      <div class="row column text-center">
-        <h2 class="section-title">Contact</h2>
-        <p class="muted centered">Call, schedule online, or send a message—then we’ll recommend the cleanest next step.</p>
-      </div>
-
-      <div class="row">
-        <div class="medium-6 columns">
-          <div class="card">
-            <h4><strong>Get in touch</strong></h4>
-            <p class="muted">
-              <strong>Phone:</strong> <a href="tel:+12253044140">(225) 304-4140</a><br />
-              <strong>Email:</strong> <a href="mailto:randy@cyberhoundsec.net">randy@cyberhoundsec.net</a><br />
-              <strong>HQ:</strong> Baton Rouge, Louisiana (remote services available nationwide)
-            </p>
-
-            <div class="row">
-              <div class="medium-6 columns">
-                <a href="#book" class="button primary expanded">Book a Consult</a>
-              </div>
-              <div class="medium-6 columns">
-                <a href="tel:+12253044140" class="button hollow expanded">Call Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="medium-6 columns">
-          <div class="card">
-            <h4><strong>Send a message</strong></h4>
-            <p class="muted" style="margin-top:0;">This goes to your inbox via Formspree.</p>
-
-            <form action="https://formspree.io/f/xaqbdooj" method="POST">
-              <input type="hidden" name="_subject" value="New Contact — Cyber Hound Security Website">
-              <input type="text" name="_gotcha" style="display:none">
-              <input type="hidden" name="_next" value="#thankyou-contact">
-
-              <label>Name
-                <input type="text" name="name" required>
-              </label>
-
-              <label>Work Email
-                <input type="email" name="email" required>
-              </label>
-
-              <label>Message
-                <textarea name="message" rows="4" placeholder="Tell us your industry, number of devices/users, and top concerns..." required></textarea>
-              </label>
-
-              <button class="button primary expanded" type="submit">Send Message</button>
-            </form>
-
-            <div id="thankyou-contact" style="margin-top:1rem;"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ========================= FOOTER ========================= -->
-  <footer class="footer">
-    <div class="row">
-      <div class="medium-7 columns">
-        <h4 style="margin:0 0 .35rem; font-weight:950;">Cyber Hound Security</h4>
-        <p style="margin:0; color: rgba(255,255,255,.82);">
-          Managed cybersecurity services • Baton Rouge, LA • Nationwide coverage
-        </p>
-
-        <div style="margin-top:.9rem;">
-          <a href="tel:+12253044140">(225) 304-4140</a>
-          <span style="opacity:.5;"> • </span>
-          <a href="mailto:randy@cyberhoundsec.net">randy@cyberhoundsec.net</a>
-          <span style="opacity:.5;"> • </span>
-          <a href="#services">Services</a>
-          <span style="opacity:.5;"> • </span>
-          <a href="#packages">Packages</a>
-        </div>
-      </div>
-
-      <div class="medium-5 columns text-center medium-text-right" style="margin-top:1rem;">
-        <p style="margin:0; color: rgba(255,255,255,.78); font-size:.95rem;">
-          © <span id="year"></span> Cyber Hound Security. All rights reserved.
-        </p>
-        <p style="margin:.35rem 0 0; color: rgba(255,255,255,.55); font-size:.85rem;">
-          No system can be guaranteed 100% secure. We focus on reducing risk, improving visibility, and strengthening response readiness.
-        </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#book">Book a Security Assessment</a>
+        <a class="btn btn-ghost" href="#services">Learn More</a>
       </div>
     </div>
-  </footer>
 
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.js"></script>
-  <script>
-    $(document).foundation();
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    <div class="hero-panel">
+      <div class="panel-title">Questions We Hear Most Often</div>
 
-  <!-- Calendly -->
-  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <div class="signal-list">
+        <div class="signal">
+          <div>
+            <strong>How do we know where we're exposed?</strong>
+            <p>We identify gaps, prioritize what matters, and give you a clear path forward.</p>
+          </div>
+        </div>
+
+        <div class="signal">
+          <div>
+            <strong>Can you help us prepare for SOC 2?</strong>
+            <p>Yes. We help strengthen your security program and support compliance readiness.</p>
+          </div>
+        </div>
+
+        <div class="signal">
+          <div>
+            <strong>Can you monitor and respond when something happens?</strong>
+            <p>Yes. We provide 24/7 monitoring and help respond before threats become bigger problems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="platforms" class="platform-section">
+  <div class="platform-card">
+    <div class="platform-label">Security Platforms & Frameworks</div>
+
+    <div class="marquee">
+      <div class="marquee-track">
+        <span class="platform-pill">Microsoft 365</span>
+        <span class="platform-pill">Microsoft Sentinel</span>
+        <span class="platform-pill">Microsoft Defender XDR</span>
+        <span class="platform-pill">Microsoft Purview</span>
+        <span class="platform-pill">Microsoft Intune</span>
+        <span class="platform-pill">Microsoft Entra ID</span>
+        <span class="platform-pill">CrowdStrike</span>
+        <span class="platform-pill">SentinelOne</span>
+        <span class="platform-pill">Splunk</span>
+        <span class="platform-pill">IBM QRadar</span>
+        <span class="platform-pill">SOC 2</span>
+        <span class="platform-pill">NIST</span>
+
+        <span class="platform-pill">Microsoft 365</span>
+        <span class="platform-pill">Microsoft Sentinel</span>
+        <span class="platform-pill">Microsoft Defender XDR</span>
+        <span class="platform-pill">Microsoft Purview</span>
+        <span class="platform-pill">Microsoft Intune</span>
+        <span class="platform-pill">Microsoft Entra ID</span>
+        <span class="platform-pill">CrowdStrike</span>
+        <span class="platform-pill">SentinelOne</span>
+        <span class="platform-pill">Splunk</span>
+        <span class="platform-pill">IBM QRadar</span>
+        <span class="platform-pill">SOC 2</span>
+        <span class="platform-pill">NIST</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">Services</div>
+      <h2>Cybersecurity support built around prevention, detection, and response.</h2>
+      <p class="section-desc">
+        We help growing SaaS teams monitor threats, close security gaps, and keep compliance moving without building a full internal security team.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card image-card">
+        <div class="image" style="background-image:url('https://images.unsplash.com/photo-1563986768711-b3bde3dc821e?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="content">
+          <div class="tag">Monitoring</div>
+          <h3>24/7 Security Monitoring</h3>
+          <p>Continuous monitoring, real-time threat detection, alert response, and incident escalation.</p>
+        </div>
+      </div>
+
+      <div class="card image-card">
+        <div class="image" style="background-image:url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="content">
+          <div class="tag">Compliance</div>
+          <h3>SOC 2 Support</h3>
+          <p>Gap assessment, control mapping, audit readiness support, and Microsoft 365 security hardening.</p>
+        </div>
+      </div>
+
+      <div class="card image-card">
+        <div class="image" style="background-image:url('https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="content">
+          <div class="tag">Vulnerabilities</div>
+          <h3>Penetration Testing</h3>
+          <p>Security validation, vulnerability assessment, SOC 2 readiness testing, and executive reporting.</p>
+        </div>
+      </div>
+
+      <div class="card image-card">
+        <div class="image" style="background-image:url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="content">
+          <div class="tag">Threat Defense</div>
+          <h3>Threat Hunting</h3>
+          <p>Proactive threat hunting, SIEM management, and threat intelligence support.</p>
+        </div>
+      </div>
+
+      <div class="card image-card">
+        <div class="image" style="background-image:url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="content">
+          <div class="tag">Risk</div>
+          <h3>Risk Assessment</h3>
+          <p>Risk assessment, remediation roadmaps, vulnerability scanning, and security posture visibility.</p>
+        </div>
+      </div>
+
+      <div class="card image-card">
+        <div class="image" style="background-image:url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="content">
+          <div class="tag">People</div>
+          <h3>Employee Phishing Training</h3>
+          <p>Security awareness and phishing training designed to reduce user-driven risk.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section about-section">
+  <div class="container">
+    <div class="about-wrap">
+      <div class="about-visual"></div>
+
+      <div class="about-copy">
+        <div class="section-kicker">About Cyber Hound</div>
+        <h2>Security support without the noise.</h2>
+        <p>
+          Cyber Hound helps growing SaaS companies become secure compliant and enterprise ready without needing to hire a full internal security team.
+        </p>
+        <p>
+          Our work focuses on practical security: visibility, monitoring, compliance support, vulnerability management, executive reporting, and clear next steps.
+        </p>
+        <p>
+          The goal is simple: help leadership understand risk, help teams fix what matters, and help the business move forward with more confidence.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#book">Learn More</a>
+          <a class="btn btn-ghost" href="#book">Book an Assessment</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="resources" class="section resources">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">Resources</div>
+      <h2>Useful cybersecurity guidance for growing SaaS teams.</h2>
+      <p class="section-desc">
+        Build a resource center over time with guides, tools, ebooks, newsletters, virtual events, and practical security content your prospects can trust.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <div class="tag">Guide</div>
+        <h3>Choosing a Managed Cybersecurity Partner</h3>
+        <p>A practical guide for SaaS teams evaluating outside security support.</p>
+        <a class="resource-link" href="#book">View Resource</a>
+      </div>
+
+      <div class="card">
+        <div class="tag">Tools</div>
+        <h3>Security Readiness Tools</h3>
+        <p>Simple checklists and tools to help teams understand gaps before an assessment.</p>
+        <a class="resource-link" href="#book">View Tools</a>
+      </div>
+
+      <div class="card">
+        <div class="tag">Events</div>
+        <h3>Virtual Security Briefings</h3>
+        <p>Short educational sessions on security reviews, SOC 2 readiness, and monitoring.</p>
+        <a class="resource-link" href="#book">View Events</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">FAQ</div>
+      <h2>Common Questions</h2>
+      <p class="section-desc">
+        Answers to common questions about our services, approach, and how we work with growing SaaS companies.
+      </p>
+    </div>
+
+    <div class="faq">
+      <div class="faq-item">
+        <button class="faq-question">Do you only work with SaaS companies? <span>+</span></button>
+        <div class="faq-answer">
+          Our website is focused on SaaS because those companies often need monitoring, compliance support, endpoint security, vulnerability management, and incident response as they grow. We can still support other B2B organizations when the fit is strong.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Do we need an internal cybersecurity team? <span>+</span></button>
+        <div class="faq-answer">
+          Not necessarily. Many growing companies use Cyber Hound Security to gain experienced security support without building a full internal cybersecurity team.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Can you help with 24/7 monitoring? <span>+</span></button>
+        <div class="faq-answer">
+          Yes. We support continuous monitoring, threat detection, alert response, and escalation so your environment is watched around the clock.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Can you help with compliance? <span>+</span></button>
+        <div class="faq-answer">
+          Yes. We support SOC 2 readiness, control mapping, audit readiness, Microsoft 365 security hardening, and security documentation.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What happens on the assessment call? <span>+</span></button>
+        <div class="faq-answer">
+          We talk through your current environment, security concerns, tools, compliance needs, and priorities. From there, we recommend the cleanest next step.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="newsletter">
+      <div>
+        <div class="section-kicker">Newsletter</div>
+        <h2>Security Briefing for Growing SaaS Teams</h2>
+        <p>
+          Monthly notes on security risk, SOC 2 readiness, customer security reviews, and practical ways to strengthen your security posture.
+        </p>
+      </div>
+
+      <form class="newsletter-form" action="https://formspree.io/f/xaqbdooj" method="POST">
+        <input type="hidden" name="_subject" value="Newsletter Signup — Cyber Hound Security">
+        <input type="email" name="email" placeholder="Work email" required>
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="book" class="section">
+  <div class="container">
+    <div class="book-card">
+      <div>
+        <div class="section-kicker">Book an Assessment</div>
+        <h2>Schedule your cybersecurity assessment.</h2>
+        <p class="section-desc">
+          We’ll review your current security posture, compliance priorities, and operational risk, then walk through the next best step for your company.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:randy@cyberhoundsec.net">Email Us</a>
+          <a class="btn btn-ghost" href="tel:+12253044140">Call (225) 304-4140</a>
+        </div>
+      </div>
+
+      <div class="calendly-inline-widget"
+           data-url="https://calendly.com/randy-cyberhoundsec-gbds/30min"
+           style="min-width:320px;height:760px;"></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer id="contact" class="footer">
+  <div class="footer-inner">
+    <div>
+      <strong>Cyber Hound Security LLC</strong>
+      <p style="margin-top:8px;">Managed security services for growing SaaS companies.</p>
+    </div>
+
+    <div>
+      <p>(225) 304-4140</p>
+      <p>randy@cyberhoundsec.net</p>
+      <p>© 2026 Cyber Hound Security LLC. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll(".faq-question").forEach((button) => {
+  button.addEventListener("click", () => {
+    const item = button.parentElement;
+    const isActive = item.classList.contains("active");
+
+    document.querySelectorAll(".faq-item").forEach((faq) => {
+      faq.classList.remove("active");
+      faq.querySelector("span").textContent = "+";
+    });
+
+    if (!isActive) {
+      item.classList.add("active");
+      button.querySelector("span").textContent = "–";
+    }
+  });
+});
+
+document.querySelector(".brand").addEventListener("click", function(e){
+  e.preventDefault();
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+});
+
+document.querySelectorAll('a[href^="#"]:not(.brand)').forEach((link) => {
+  link.addEventListener("click", function(e){
+    const targetId = this.getAttribute("href");
+
+    if (!targetId || targetId === "#") return;
+
+    const target = document.querySelector(targetId);
+    const header = document.querySelector(".header");
+
+    if (!target || !header) return;
+
+    e.preventDefault();
+
+    const headerHeight = header.offsetHeight;
+    const extraSpace = 24;
+    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - extraSpace;
+
+    window.scrollTo({
+      top: targetPosition,
+      behavior: "smooth"
+    });
+  });
+});
+</script>
+
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
 </body>
 </html>
