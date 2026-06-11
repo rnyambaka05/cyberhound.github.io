@@ -1136,27 +1136,27 @@ footer[id]{
     </div>
 
     <div class="hero-panel">
-      <div class="panel-title">What Could Go Wrong?</div>
+      <div class="panel-title">What Business Owners Worry About</div>
 
       <div class="signal-list">
         <div class="signal">
           <div>
-            <strong>Would we catch a hacked inbox fast?</strong>
-            <p>We monitor risky sign-ins, inbox rules, and account takeover signs before damage spreads.</p>
+            <strong>How do we know where we're exposed?</strong>
+            <p>We identify security gaps, prioritize what matters most, and give you a clear path foward.</p>
           </div>
         </div>
 
         <div class="signal">
           <div>
-            <strong>What sensitive data is already exposed?</strong>
-            <p>We review where client, payment, and business data can be accessed or shared too freely.</p>
+            <strong>Could sensitive client data be exposed without us knowing?</strong>
+            <p>We help uncover where financial records, client data, internal files, and business documents may be at risk.</p>
           </div>
         </div>
 
         <div class="signal">
           <div>
-            <strong>Who responds when alerts happen?</strong>
-            <p>We help monitor, escalate, report, and respond so threats do not sit unnoticed.</p>
+            <strong>Could you monitor our systems after hours?</strong>
+            <p>Yes. We provide 24/7 monitoring so suspicious activity and urgent alerts do not sit unnoticed.</p>
           </div>
         </div>
       </div>
@@ -1628,7 +1628,7 @@ footer[id]{
         </p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:randy@cyberhoundsec.net">Email Us</a>
+          <a class="btn btn-primary" href="mailto:contact@cyberhoundsec.net">Email Us</a>
           <a class="btn btn-ghost" href="#services">Learn More</a>
         </div>
       </div>
@@ -1650,7 +1650,7 @@ footer[id]{
     </div>
 
     <div>
-      <p>randy@cyberhoundsec.net</p>
+      <p>contact@cyberhoundsec.net</p>
       <p>© 2026 Cyber Hound Security LLC. All rights reserved.</p>
     </div>
   </div>
@@ -1696,10 +1696,11 @@ document.querySelectorAll('a[href^="#"]:not(.brand)').forEach((link) => {
     e.preventDefault();
 
     const headerHeight = header.offsetHeight;
+    const extraScrollSpace = 40;
     const anchor =
       target.querySelector(":scope > .container, :scope > .platform-card, :scope > .footer-inner") || target;
 
-    const targetPosition = anchor.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+    const targetPosition = anchor.getBoundingClientRect().top + window.pageYOffset - headerHeight - extraScrollSpace;
 
     window.scrollTo({
       top: Math.max(targetPosition, 0),
